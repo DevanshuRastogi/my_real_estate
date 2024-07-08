@@ -1,0 +1,40 @@
+.header_section {
+  .header_parts {
+
+    
+    padding: 10px 10px;
+    
+    .header_part_1 {
+      width: 134px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .header_part_2 {
+      padding-top: 10px;
+      ul {
+        color: #000929;
+        li {
+          display: inline;
+          margin-right: 48px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          a{
+            color: #000929;
+          }
+          
+        }
+      }
+    }
+    .header_part_3{
+      text-align: center;
+    }
+  }
+}

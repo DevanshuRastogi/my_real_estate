@@ -1,0 +1,197 @@
+.footer_section {
+  .footer_upper {
+    background: linear-gradient(
+      164.6deg,
+      #9991f4 -16.94%,
+      rgba(224, 222, 247, 0) 124.1%
+    );
+    padding: 64px 70px 92px;
+
+    .footer_part_1 {
+      padding-right: 45px;
+
+      .footer_part_1_h4 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: left;
+        padding-bottom: 12px;
+        color: #181a2a;
+      }
+
+      h4 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: left;
+        color: #181a2a;
+      }
+      p {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        padding-bottom: 24px;
+        color: #696a75;
+      }
+    }
+
+    .footer_part_2 {
+      .footer_part_2_inner_1 {
+        h4 {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+          padding-bottom: 24px;
+          color: #181a2a;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 35px;
+          text-align: left;
+          color: #181a2a;
+        }
+      }
+      .footer_part_2_inner_2 {
+        h4 {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+          padding-bottom: 24px;
+          color: #181a2a;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 35px;
+          text-align: left;
+          color: #181a2a;
+        }
+      }
+    }
+
+    .footer_part_3 {
+      text-align: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        border: 1px solid #DCDDDF;
+      }
+
+      h4 {
+        padding-bottom: 8px;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        color: #181a2a;
+      }
+
+      p {
+        padding-bottom: 30px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: #696a75;
+      }
+
+      Button {
+        width: 300px;
+        height: 48px;
+      }
+    }
+  }
+
+  .footer_lower {
+    padding: 29.5px 70px;
+    background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+
+    .lower_1 {
+      width: 134px;
+      height: 40px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .lower_2 {
+      padding-top: 10px;
+
+      ul {
+        li {
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          display: inline-block;
+          position: relative;
+          margin-right: 2px;
+          margin-left: 8px;
+          color: #ffffff;
+        }
+        li::after {
+          content: "|";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin-top: -1px;
+          margin-right: -8px;
+        }
+        li:last-child::after {
+          display: none;
+        }
+      }
+    }
+    .lower_3 {
+      padding-left: 22px;
+      padding-top: 10px;
+      ul {
+        li {
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          display: inline-block;
+          position: relative;
+          margin-right: 2px;
+          margin-left: 8px;
+          color: #ffffff;
+        }
+        li::after {
+          content: "|";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin-top: -1px;
+          margin-right: -8px;
+        }
+        li:last-child::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

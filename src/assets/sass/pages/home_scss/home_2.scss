@@ -1,0 +1,190 @@
+.browser_properties {
+  padding: 0px 70px 130px 70px;
+  
+
+  .properties_1 {
+    padding: 34px 66px 0px 0px;
+    position: relative;
+    background: #f7f7fd;
+    border-radius: 10px;
+    
+
+    .properties_details {
+      padding-left: 42px;
+      h3 {
+        padding-bottom: 16px;
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+        color: #1a1a1a;
+      }
+      p {
+        padding-right: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4d5461;
+        width: 80%;
+        padding-bottom: 24px;
+      }
+      Button {
+        margin-bottom: 10px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19.6px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+    .properties_home {
+      right: -15px;
+      height: 329px;
+      width: 397px;
+      position: relative;
+      z-index: 1;
+      bottom: -24px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .properties_2 {
+    padding-top: 60px;
+    padding-left: 58px;
+    .properties_p1 {
+    
+      margin-bottom: 52px;
+      .p1_image {
+        height: 56px;
+        width: 56px;
+        padding-bottom: 24px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding-bottom: 16px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4D5461;
+
+      }
+    }
+    .properties_p2 {
+      
+      margin-bottom: 52px;
+      .p2_image {
+        height: 56px;
+        width: 56px;
+        padding-bottom: 24px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding-bottom: 16px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4D5461;
+
+      }
+    }
+    .properties_p3 {
+    
+      padding-bottom: 57px;   
+      .p3_image {
+        height: 56px;
+        width: 56px;
+        padding-bottom: 24px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding-bottom: 16px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4D5461;
+
+      }
+    }
+    .properties_p4 {
+     
+      padding-bottom: 57px;
+      .p4_image {
+        height: 56px;
+        width: 56px;
+        padding-bottom: 24px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        padding-bottom: 16px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4D5461;
+
+      }
+    }
+  }
+}
