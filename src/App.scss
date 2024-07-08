@@ -1,0 +1,17 @@
+/********************* FONT-FAMILY AND TOASTER ********************/
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/******************* COMMON CSS FILES ******************/
+@import "./assets/sass/base/variable.scss";
+@import "./assets/sass/base/mixins.scss";
+
+@import "./assets/sass/base/reset.scss";
+@import "./assets/sass/base/base.scss";
+
+
+
+// -------- For Screens ----------- //
+@import "./assets/sass/pages/login.scss";
+@import "./../src/assets/sass/pages/blogcomponent.scss";
+@import "./../src/assets/sass/pages/pagination.scss";
+@import "./../src/assets/sass/pages/singleblog.scss";

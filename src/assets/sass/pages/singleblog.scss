@@ -1,0 +1,43 @@
+.singleblog_page {
+  padding: 30px 0;
+  h1 {
+    font-family: "Inter";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: left;
+    color:#181A2A
+  }
+
+  h5 {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 28px;
+    color: #696A75;
+    position: relative;
+  }
+
+  .css-i4bv87-MuiSvgIcon-root{
+    position: relative;
+    color: #696A75;
+    top:7px
+  }
+  img {
+    width: 1146px;
+    height: 462px;
+    object-fit: cover;
+    padding-top: 36px;
+  }
+  .para_divs {
+    text-align: left;
+    line-height: 24px;
+
+    p {
+      padding-top: 32px;
+      color: #3B3C4A;
+    }
+  }
+}
