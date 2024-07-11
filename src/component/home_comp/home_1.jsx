@@ -2,16 +2,17 @@ import { Grid } from "@mui/material";
 import * as React from 'react';
 import Container from "@mui/material/Container";
 import HomeIcon from "@mui/icons-material/Home";
-import logo from "../../../assets/images/Mask group.png";
+import logo from "../../assets/images/Mask group.png";
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 
+import SearchBar from "../searchbar"
 const Home_1 = () => {
-  const [property, setAge] = React.useState('');
+  // const [property, setAge] = React.useState('');
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setAge(event.target.value);
+  // };
   return (
     <section className="home_1">
       <Container>
@@ -33,12 +34,15 @@ const Home_1 = () => {
                   Luxury Homes from Lusaka to Livingstone. Experience Zambia's
                   Most Desired Real Estate.
                 </p>
+                <SearchBar />
               </div>
               <div className="home_image">
                 <img src={logo} alt="..." />
               </div>
-              <div className="eclipse"></div>
-              <div className="sell_buy">
+              <div className="eclipse">
+                
+              </div>
+              {/* <div className="sell_buy">
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
@@ -50,7 +54,7 @@ const Home_1 = () => {
                   <MenuItem value={20}>Twenty</MenuItem>
                   <MenuItem value={30}>Thirty</MenuItem>
                 </Select>
-              </div>
+              </div> */}
             </div>
           </Grid>
         </Grid>

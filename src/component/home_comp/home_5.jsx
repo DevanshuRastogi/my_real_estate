@@ -1,11 +1,11 @@
 import { Container } from "@mui/material/";
 import Grid from "@mui/material/Grid";
-import img1 from "../../../assets/images/Link.png";
-import img2 from "../../../assets/images/Link (1).png";
-import img3 from "../../../assets/images/Link (2).png";
-import img4 from "../../../assets/images/Link (3).png";
-import img5 from "../../../assets/images/Link (4).png";
-import img6 from "../../../assets/images/Link (5).png";
+// import img1 from "../../../assets/images/Link.png";
+// import img2 from "../../../assets/images/Link (1).png";
+// import img3 from "../../../assets/images/Link (2).png";
+// import img4 from "../../../assets/images/Link (3).png";
+// import img5 from "../../../assets/images/Link (4).png";
+// import img6 from "../../../assets/images/Link (5).png";
 
 const Home_5 = () => {
   return (
