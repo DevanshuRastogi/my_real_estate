@@ -1,11 +1,11 @@
 import { Container } from "@mui/material/";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import sechome from "../../../src/assets/images/3d-rendering-isometric-fdgdf 1.png";
-import icon1 from "../../../src/assets/images/Icon.png";
-import icon2 from "../../../src/assets/images/Icon 2.png";
-import icon3 from "../../../src/assets/images/Icon 3.png";
-import icon4 from "../../../src/assets/images/Icon 4.png";
+import sechome from "../../../assets/images/3d-rendering-isometric-fdgdf 1.png";
+import icon1 from "../../../assets/images/Icon.png";
+import icon2 from "../../../assets/images/Icon 2.png";
+import icon3 from "../../../assets/images/Icon 3.png";
+import icon4 from "../../../assets/images/Icon 4.png";
 
 const Home_2 = () => {
   return (
@@ -35,7 +35,8 @@ const Home_2 = () => {
                 </Grid>
                 <Grid item lg={7}>
                   <div className="properties_2">
-                    <Grid container>
+                    <div className="properties_upper">
+                    <Grid container spacing={2}>
                       <Grid item lg={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
@@ -63,7 +64,11 @@ const Home_2 = () => {
                         </div>
                       </Grid>
                     </Grid>
-                    <Grid container>
+                    </div>
+                    <div className="properties_lower">
+
+                   
+                    <Grid container spacing={2}>
                       <Grid item lg={6}>
                         <div className="properties_p3">
                           <div className="p3_image">
@@ -89,6 +94,7 @@ const Home_2 = () => {
                         </div>
                       </Grid>
                     </Grid>
+                    </div>
                   </div>
                 </Grid>
               </Grid>

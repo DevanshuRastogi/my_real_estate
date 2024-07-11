@@ -1,20 +1,23 @@
 import { Grid } from "@mui/material";
+import * as React from 'react';
 import Container from "@mui/material/Container";
 import HomeIcon from "@mui/icons-material/Home";
-import logo from "../../assets/images/Mask group.png"
-
+import logo from "../../../assets/images/Mask group.png";
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 
 const Home_1 = () => {
+  const [property, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <section className="home_1">
       <Container>
         <Grid conatiner>
           <Grid item lg={12}>
             <div className="home_1_info">
-              <div className="right_color"></div>
-              <div className="eclipse" >
-                
-              </div>
               <div className="home_1_icon">
                 <HomeIcon sx={{ color: "#7065F0" }} />
                 <h4>Best Real Estate </h4>
@@ -33,6 +36,20 @@ const Home_1 = () => {
               </div>
               <div className="home_image">
                 <img src={logo} alt="..." />
+              </div>
+              <div className="eclipse"></div>
+              <div className="sell_buy">
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={property}
+                  label="Property Type"
+                  onChange={handleChange}
+                >
+                  <MenuItem value={10}>Ten</MenuItem>
+                  <MenuItem value={20}>Twenty</MenuItem>
+                  <MenuItem value={30}>Thirty</MenuItem>
+                </Select>
               </div>
             </div>
           </Grid>
