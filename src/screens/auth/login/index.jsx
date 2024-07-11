@@ -3,6 +3,7 @@ import loginhandImage from "./../../../assets/images/loginhand.jpg";
 import mainlogo from "./../../../assets/images/mainlogo.png";
 import { Container, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
+import { NavLink } from 'react-router-dom';
 // import FilledInput from '@mui/material/FilledInput';
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -47,7 +48,7 @@ const Login = () => {
                       <h3>Login</h3>
                       <p>If you don't have a registered account</p>
                       <p>
-                        You can <a href="javascript:;">Register here !</a>
+                        You can <NavLink to="/signup">Register Here !</NavLink>
                       </p>
 
                       <div className="form_fields">
@@ -113,9 +114,7 @@ const Login = () => {
                                 />
                               </div>
                               <div className="forgot_link">
-                                <Link href="/forgot-password">
-                                  Forgot Password?
-                                </Link>
+                              <NavLink to="/resetpass">Forgot Password</NavLink>
                               </div>
                             </div>
                           </Grid>

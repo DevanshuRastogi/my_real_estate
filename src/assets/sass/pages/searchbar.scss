@@ -1,0 +1,112 @@
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    background-color: #fff;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  
+    .tab-container {
+      display: flex;
+      justify-content: flex-start;
+      width: auto; /* Only take the necessary width */
+      background-color: transparent;
+      margin-bottom: 0;
+  
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          padding: 10px 32px;
+          
+          cursor: pointer;
+          color: #737579;
+          background-color: #f5f5f5;
+          border-radius: 5px 5px 0 0;
+          margin-right: 9px;
+          transition: background-color 0.3s, color 0.3s;
+  
+          &.selected {
+            background: linear-gradient(90deg, #2d30999a -12.81%, #0f40b2c1 100%);
+            color: #f7f7f8;
+          }
+        }
+      }
+    }
+  
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: 1px solid #ccc;
+  
+      .property-type {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+  
+        .icon-house {
+          margin-right: 5px;
+        }
+  
+        .MuiFormControl-root {
+          min-width: 120px;
+          .MuiSelect-select {
+            padding: 0;
+          }
+        }
+      }
+  
+      .divider {
+        width: 1px;
+        height: 30px;
+        background-color: #ccc;
+        margin: 0 10px;
+      }
+  
+      .search-input {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin-right: 20px;
+  
+        .icon-search {
+          margin-right: 10px;
+          color: #737579;
+        }
+  
+        input {
+          border: none;
+          background: none;
+          outline: none;
+          width: 100%;
+          color: #737579;
+        }
+      }
+  
+      .search-button {
+        &.buy {
+          background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+          color: #fff;
+        }
+  
+        &.sell {
+          background-color: #F3F3F3;
+          color: #4D5461;
+        }
+      }
+    }
+  }
+  

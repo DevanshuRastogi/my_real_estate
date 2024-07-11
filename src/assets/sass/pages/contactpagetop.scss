@@ -1,0 +1,148 @@
+.contact_top_section{
+    // margin-top: 50px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+     overflow: hidden;
+position: relative;
+    .top_card {
+      position: relative;
+      border-radius: 6px;
+      
+  
+      .first_card_content {
+        
+        padding: 136px 150px 136px 0;
+        overflow: hidden;
+        position: relative;
+  
+        h3,
+        h2,
+        p {
+          color: #ffffff;
+        }
+  
+        h3 {
+          font-family: "Inter";
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 52px;
+          text-align: left;
+        }
+  
+        h2 {
+          font-family: "Inter";
+          font-size: 36px;
+          font-weight: 700;
+          text-align: left;
+          padding-top: 12px;
+        }
+  
+        p {
+          padding-top: 24px;
+          font-family: "Inter";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.6px;
+          text-align: left;
+        }
+  
+        &::after {
+          content: "";
+          position: absolute;
+          width: 309px;
+          height: 309px;
+          top: -154px;
+          right: -65px;
+          border-radius: 50%;
+          background-color: #9991f41a;
+        }
+  
+        &::before {
+          content: "";
+          position: absolute;
+          width: 160px;
+          height: 160px;
+          top: 38px;
+          right: -52px;
+          border-radius: 50%;
+          background-color: #9991f41a;
+        }
+      }
+  
+      .first_card_image {
+       width: 569px;
+       height: 589px;
+        position: absolute;
+        background-position: right;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        width: 309px;
+        height: 309px;
+        bottom: -62px;
+        left: -190px;
+        border-radius: 50%;
+        background-color: #1041b31a;
+      }
+  
+      &::before {
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        
+    left: -14px;
+    bottom: -59px;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: #1041b31a;
+      }
+    }
+    }
+    
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+   
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+   
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

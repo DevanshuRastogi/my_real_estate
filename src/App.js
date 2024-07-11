@@ -9,8 +9,8 @@ import ResetPass from './screens/auth/resetpass';
 import Blogs from './screens/blog';
 import SingleBlog from './screens/singleblog';
 import axios from 'axios';
-
-// Define the loader for SingleBlog
+import Contact from './screens/contact';
+import AboutUs from './screens/about';
 const singleBlogLoader = async ({ params }) => {
   const { id } = params;
   const response = await axios.get(`http://localhost:5000/blogs/${id}`);
@@ -24,6 +24,8 @@ const router = createBrowserRouter([
   { path: '/changepass', element: <ChangePass /> },
   { path: '/resetpass', element: <ResetPass /> },
   { path: '/blogpage', element: <Blogs /> },
+  { path: '/about', element: <AboutUs/> },
+  { path: '/contact', element: <Contact /> },
   {
     path: '/blogs/:id',
     element: <SingleBlog />,

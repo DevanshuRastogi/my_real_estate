@@ -1,6 +1,7 @@
 import React from "react";
 import loginhandImage from "./../../../assets/images/loginhand.jpg";
 import mainlogo from "./../../../assets/images/mainlogo.png";
+import { NavLink } from 'react-router-dom';
 import { Container, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 // import FilledInput from '@mui/material/FilledInput';
@@ -48,7 +49,7 @@ const Login = () => {
                       <h3>Sign-Up </h3>
                       <p>If you already have an account register</p>
                       <p>
-                        You can <a href="javascript:;">Login here !</a>
+                        You can <NavLink to="/login">Login Here !</NavLink>
                       </p>
                       <div className="form_fields">
                         <Grid container>

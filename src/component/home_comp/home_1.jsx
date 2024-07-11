@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import Container from "@mui/material/Container";
 import HomeIcon from "@mui/icons-material/Home";
-import logo from "../../../assets/images/Mask group.png"
+import logo from "../../assets/images/Mask group.png"
 
 
 const Home_1 = () => {
