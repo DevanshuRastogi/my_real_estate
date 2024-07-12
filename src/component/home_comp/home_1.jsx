@@ -2,9 +2,8 @@ import { Grid } from "@mui/material";
 import * as React from 'react';
 import Container from "@mui/material/Container";
 import HomeIcon from "@mui/icons-material/Home";
-import logo from "../../assets/images/Mask group.png";
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
+import logo from "../../assets/images/download-removebg-preview.png";
+
 
 import SearchBar from "../searchbar"
 const Home_1 = () => {
@@ -34,8 +33,9 @@ const Home_1 = () => {
                   Luxury Homes from Lusaka to Livingstone. Experience Zambia's
                   Most Desired Real Estate.
                 </p>
-                <SearchBar />
+           
               </div>
+              <SearchBar />
               <div className="home_image">
                 <img src={logo} alt="..." />
               </div>

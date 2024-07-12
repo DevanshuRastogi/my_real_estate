@@ -1,14 +1,13 @@
 .search-bar-container {
-    display: flex;
+  display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start */
-    background-color: #fff;
+    align-items: flex-start;
+    background-color: transparent;
     padding: 0;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    width: 634px;
     max-width: 900px;
-    margin: auto;
   
     .tab-container {
       display: flex;
@@ -44,12 +43,12 @@
     .search-box {
       display: flex;
       align-items: center;
-      width: 100%;
+      width: 620px;
       background-color: #fff;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 9px;
       border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-top-right-radius: 9px;
       border: 1px solid #ccc;
   
       .property-type {

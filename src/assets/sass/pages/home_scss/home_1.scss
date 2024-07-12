@@ -4,6 +4,7 @@
     #9991f4 -16.94%,
     rgba(224, 222, 247, 0) 124.1%
   );
+  margin-bottom: 90px;
   position: relative;
   &::before {
     content: "";
@@ -23,10 +24,10 @@
     position: absolute;
     background-color: #9991f4;
     opacity: 70%;
-    width: 160px;
-    height: 160px;
-    top: 198px;
-    right: 612px;
+    width: 127px;
+    height: 127px;
+    top: 263px;
+    right: 535px;
     bottom: 0;
   }
   .eclipse {
@@ -34,24 +35,23 @@
     position: absolute;
     background-color: #9991f4;
     opacity: 70%;
-    width: 160px;
-    height: 160px;
-    top: 71px;
-    right: 185px;
+    width: 127px;
+    height: 127px;
+    top: 50px;
+    right: 168px;
     bottom: 0;
   }
   .home_1_info {
     border-radius: 0px 5px 5px 0px;
     padding-top: 107px;
-    padding-bottom: 81px;
+    padding-bottom:40px;
     position: relative;
-    margin-bottom: 120px;
 
     .home_1_icon {
       display: flex;
       .css-29m0ly-MuiSvgIcon-root {
-        width: 2em;
-        height: 2em;
+        width: 25px;
+        height: 26px;
       }
       h4 {
         padding-top: 5px;
@@ -81,9 +81,7 @@
 
     .home_1_para {
       border-left: 1px solid black;
-      padding-right: 610px;
       padding-left: 10px;
-      margin-bottom: 20px;
       p {
         font-family: "Inter", sans-serif;
         font-size: 16px;
@@ -93,13 +91,14 @@
         color: #1e1e1e;
         width: 400px;
         max-width: 100%;
+        margin-bottom: 50px;
       }
     }
     .home_image {
-      height: 352px;
-      width: 569px;
-      bottom: -50px;
-      right: -24px;
+      height: 600px;
+      width: 700px;
+      bottom: -118px;
+      right: -172px;
       position: absolute;
       z-index: 1;
       img {
