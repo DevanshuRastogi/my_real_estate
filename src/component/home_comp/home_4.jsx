@@ -5,7 +5,6 @@ import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import { Container } from '@mui/material';
 import { Grid } from '@mui/material';
 
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -80,5 +79,3 @@ const Home_4 = () => {
 };
 
 export default Home_4;
-
-// nothing to do

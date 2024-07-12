@@ -61,10 +61,10 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_1">
                       <div className="grid_img_1">
-                        <img
+                        {/* <img
                           src="http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg"
                           alt="..."
-                        /> 
+                        />  */}
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
