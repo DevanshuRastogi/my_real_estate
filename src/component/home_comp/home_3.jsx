@@ -61,10 +61,10 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_1">
                       <div className="grid_img_1">
-                        <img
+                        {/* <img
                           src="https://img.freepik.com/premium-photo/beautiful-modern-style-luxury-home-exterior-sunset-with-glowing-interior-lights_1128603-3292.jpg?ga=GA1.1.58479570.1718437016&semt=ais_user"
                           alt="..."
-                        />
+                        /> */}
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
