@@ -48,7 +48,7 @@ const Home_3 = () => {
                   </Grid>
                   <Grid item lg={4}>
                     <div className="f_list_2">
-                      <a href="javascript:;">
+                      <a href="javascript:;" aria-label="See All Listing">
                         See All Listing
                         <ArrowForwardIcon sx={{ marginBottom: "-4px" }} />
                       </a>

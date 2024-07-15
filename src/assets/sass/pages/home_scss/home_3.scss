@@ -117,9 +117,13 @@
           left: 15px;
           .icon_info_1 {
             display: flex;
+            p{
+              color: black;
+            }
             .grid_info_icon_1 {
               margin-top: 4px;
               margin-left: -7px;
+              
               .css-i4bv87-MuiSvgIcon-root {
                 height: 20px;
                 width: 25px;

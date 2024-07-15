@@ -4,10 +4,10 @@
     display: grid;
     // border: 1px dotted blueviolet;
     justify-items: center;
-    grid-template-columns: 108px  auto 106px;
+    grid-template-columns: 108px auto 106px;
     align-items: center;
     // padding-top: 25px;
-    
+
     .header_part_1 {
       width: 108px;
       height: 37px;
@@ -25,7 +25,7 @@
       // padding: 10px;
       // border: 1px solid red;
       justify-self: center;
-     
+
       ul {
         display: flex;
         gap: 50px;
@@ -38,23 +38,25 @@
           font-weight: 500;
           line-height: 24px;
           text-align: left;
-          a{
+          a {
             color: #000929;
-          }:hover{
-            color: #1845B6;
-            font-weight: bold;
           }
-          
+          &:hover {
+            a {
+              color: #1845b6;
+              font-weight: bold;
+            }
+          }
         }
       }
     }
-    .header_part_3{
+    .header_part_3 {
       justify-self: start;
       // text-align: center;
       align-self: self-start;
       // padding-top: 4px;
-      Button{
-        background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+      Button {
+        background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
         width: 78px;
         height: 31px;
         font-family: "Inter";
@@ -62,107 +64,106 @@
         font-weight: 500;
         line-height: 24px;
         text-align: center;
-
+      }
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 2px 2px 7px #1845b6;
+      }
     }
-        &:hover {
-          transform: scale(1.03);
-          box-shadow: 2px 2px 10px #1845B6;
-        }
-      }
 
-      .menu{
-        display: none;
-      }
+    .menu {
+      display: none;
     }
   }
-
-
-/* Extra Huge large desktops */
-@media (min-width: 1920px) {}
+}
 
 /* Extra Huge large desktops */
-@media (min-width: 1680px) and (max-width: 1919px) {}
+@media (min-width: 1920px) {
+}
 
 /* Extra Huge large desktops */
-@media (min-width: 1600px) and (max-width: 1679px) {}
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
 
 /* Extra large desktops and mac laptops*/
 @media (min-width: 1400px) and (max-width: 1599px) {
-
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-   .header_section {
-  .header_parts {
-    padding: 20px 0 40px 0;
-    display: grid;
-    // border: 1px dotted blueviolet;
-    justify-items: center;
-    grid-template-columns: 108px  auto 106px;
-    align-items: center;
-    // padding-top: 25px;
-    
-    .header_part_1 {
-      width: 108px;
-      height: 37px;
-      justify-self: start;
-      // padding-top: 2px;
+  .header_section {
+    .header_parts {
+      padding: 20px 0 40px 0;
+      display: grid;
+      // border: 1px dotted blueviolet;
+      justify-items: center;
+      grid-template-columns: 108px auto 106px;
+      align-items: center;
+      // padding-top: 25px;
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+      .header_part_1 {
+        width: 108px;
+        height: 37px;
+        justify-self: start;
+        // padding-top: 2px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
       }
-    }
 
-    .header_part_2 {
-      // padding: 10px;
-      // border: 1px solid red;
-      justify-self: center;
-     
-      ul {
-        display: flex;
-        gap: 30px;
-        color: #000929;
-        li {
-          // display: inline;
-          // margin-right: 48px;
-          font-family: Inter;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 24px;
-          text-align: left;
-          a{
-            color: #000929;
-          }:hover{
-            color: #1845B6;
-            font-weight: bold;
+      .header_part_2 {
+        // padding: 10px;
+        // border: 1px solid red;
+        justify-self: center;
+
+        ul {
+          display: flex;
+          gap: 30px;
+          color: #000929;
+          li {
+            // display: inline;
+            // margin-right: 48px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            a {
+              color: #000929;
+            }
+            :hover {
+              color: #1845b6;
+              font-weight: bold;
+            }
           }
-          
         }
       }
-    }
-    .header_part_3{
-      justify-self: start;
-      // text-align: center;
-      align-self: self-start;
-      // padding-top: 4px;
-      Button{
-        background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
-        &:hover {
-          transform: scale(1.03);
-          box-shadow: 2px 2px 10px #1845B6;
+      .header_part_3 {
+        justify-self: start;
+        // text-align: center;
+        align-self: self-start;
+        // padding-top: 4px;
+        Button {
+          background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+          &:hover {
+            transform: scale(1.03);
+            box-shadow: 2px 2px 10px #1845b6;
+          }
         }
-      }
 
-      .menu{
-        display: none;
+        .menu {
+          display: none;
+        }
       }
     }
   }
-}
-
 }
 
 /* Landscape tablets and ipad */
@@ -173,28 +174,28 @@
       display: grid;
       // border: 1px dotted blueviolet;
       justify-items: center;
-      grid-template-columns: 108px  auto 106px;
+      grid-template-columns: 108px auto 106px;
       align-items: center;
       // padding-top: 25px;
-      
+
       .header_part_1 {
         width: 100px;
         height: 30px;
         justify-self: start;
         // padding-top: 2px;
-  
+
         img {
           height: 100%;
           width: 100%;
           object-fit: contain;
         }
       }
-  
+
       .header_part_2 {
         // padding: 10px;
         // border: 1px solid red;
         justify-self: center;
-       
+
         ul {
           display: flex;
           gap: 12px;
@@ -207,33 +208,33 @@
             font-weight: 500;
             line-height: 24px;
             text-align: left;
-            a{
+            a {
               color: #000929;
-            }:hover{
-              color: #1845B6;
+            }
+            :hover {
+              color: #1845b6;
               font-weight: bold;
             }
-            
           }
         }
       }
-      .header_part_3{
+      .header_part_3 {
         justify-self: center;
         // text-align: center;
         align-self: self-start;
         // padding-top: 4px;
-        Button{
-          background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+        Button {
+          background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
           padding: 2px 4px 2px 6px;
           height: 29px;
           margin-top: 2px;
           &:hover {
             transform: scale(1.03);
-            box-shadow: 2px 2px 10px #1845B6;
+            box-shadow: 2px 2px 10px #1845b6;
           }
         }
-  
-        .menu{
+
+        .menu {
           display: none;
         }
       }
@@ -249,28 +250,28 @@
       display: grid;
       // border: 1px dotted blueviolet;
       justify-items: center;
-      grid-template-columns: 108px  auto 106px;
+      grid-template-columns: 108px auto 106px;
       align-items: center;
       // padding-top: 25px;
-      
+
       .header_part_1 {
         width: 100px;
         height: 30px;
         justify-self: start;
         // padding-top: 2px;
-  
+
         img {
           height: 100%;
           width: 100%;
           object-fit: contain;
         }
       }
-  
+
       .header_part_2 {
         // padding: 10px;
         // border: 1px solid red;
         justify-self: center;
-       
+
         ul {
           display: flex;
           gap: 12px;
@@ -283,50 +284,48 @@
             font-weight: 500;
             line-height: 24px;
             text-align: left;
-            a{
+            a {
               color: #000929;
-            }:hover{
-              color: #1845B6;
+            }
+            :hover {
+              color: #1845b6;
               font-weight: bold;
             }
-            
           }
         }
       }
-      .header_part_3{
+      .header_part_3 {
         justify-self: center;
         // text-align: center;
         align-self: self-start;
         // padding-top: 4px;
-        Button{
-          background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+        Button {
+          background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
           padding: 2px 4px 2px 6px;
           height: 29px;
           margin-top: 2px;
           &:hover {
             transform: scale(1.03);
-            box-shadow: 2px 2px 10px #1845B6;
+            box-shadow: 2px 2px 10px #1845b6;
           }
         }
-  
-        .menu{
+
+        .menu {
           display: none;
         }
       }
     }
   }
-    
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 361px) and (max-width: 575px) {
-   
 }
 
 /* Smaller phones */
 @media (max-width: 360px) {
-    
 }
 
 /* Smaller phones */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
