@@ -8,7 +8,7 @@ import img2 from "../../assets/images/home2.jpg";
 // import img4 from "../../../assets/images/home4.png";
 // import img5 from "../../../assets/images/home5.png";
 // import img6 from "../../../assets/images/home6.png";
-import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
+import AddLocationAltOutlinedIcon from "@mui/icons-material/AddLocationAltOutlined";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 // import { Typography } from "@material-ui/core";
 import HotelOutlinedIcon from "@mui/icons-material/HotelOutlined";
@@ -66,48 +66,50 @@ const Home_3 = () => {
                           alt="..."
                         />  */}
                       </div>
-                      <div className="grid_list">
-                        <Button variant="contained">For Sale</Button>
-                      </div>
-                      <div className="grid_info">
-                        <h4>Skyper Pool Apartment</h4>
-                        <div className="icon_info_1">
-                          <div className="grid_info_icon_1">
-                            <AddLocationAltOutlinedIcon />
-                          </div>
-                          <p>1020 Bloomingdale Ave</p>
+                      <div className="overlay1">
+                        <div className="grid_list">
+                          <Button variant="contained">For Sale</Button>
                         </div>
-                        <div className="grid_flex">
-                          <div className="grid_flex_left">
-                            <ul>
-                              <li>
-                                <div className="icon_info_2">
-                                  <div className="grid_info_icon_2">
-                                    <HotelOutlinedIcon />
-                                  </div>
-                                  <p>4</p>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="icon_info_3">
-                                  <div className="grid_info_icon_3">
-                                    <BathtubOutlinedIcon />
-                                  </div>
-                                  <p>2</p>
-                                </div>
-                              </li>
-                              <li>
-                                <div className="icon_info_4">
-                                  <div className="grid_info_icon_4">
-                                    <SquareFootIcon />
-                                  </div>
-                                  <p>450</p>
-                                </div>
-                              </li>
-                            </ul>
+                        <div className="grid_info">
+                          <h4>Skyper Pool Apartment</h4>
+                          <div className="icon_info_1">
+                            <div className="grid_info_icon_1">
+                              <AddLocationAltOutlinedIcon />
+                            </div>
+                            <p>1020 Bloomingdale Ave</p>
                           </div>
-                          <div className="grid_flex_right">
-                            <p>280,000</p>
+                          <div className="grid_flex">
+                            <div className="grid_flex_left">
+                              <ul>
+                                <li>
+                                  <div className="icon_info_2">
+                                    <div className="grid_info_icon_2">
+                                      <HotelOutlinedIcon />
+                                    </div>
+                                    <p>4</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div className="icon_info_3">
+                                    <div className="grid_info_icon_3">
+                                      <BathtubOutlinedIcon />
+                                    </div>
+                                    <p>2</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div className="icon_info_4">
+                                    <div className="grid_info_icon_4">
+                                      <SquareFootIcon />
+                                    </div>
+                                    <p>450</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="grid_flex_right">
+                              <p>280,000</p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -116,7 +118,9 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_2">
                       <div className="grid_img_2">
-                        <img src={img2} alt="..." />
+                        {/* <img src={img2} alt="..." /> */}
+                      </div>
+                      <div className="overlay2">
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
@@ -169,8 +173,9 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_3">
                       <div className="grid_img_3">
-                        <img src={img2} alt="..." />
+                        {/* <img src={img2} alt="..." /> */}
                       </div>
+                      <div className="overlay2"></div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
                       </div>
@@ -221,8 +226,9 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_4">
                       <div className="grid_img_4">
-                        <img src={img2} alt="..." />
+                        {/* <img src={img2} alt="..." /> */}
                       </div>
+                      <div className="overlay2"></div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
                         <Button variant="contained">Featured</Button>
@@ -326,7 +332,9 @@ const Home_3 = () => {
                   <Grid item lg={4}>
                     <div className="f_grid_6">
                       <div className="grid_img_6">
-                        <img src={img2} alt="..." />
+                        {/* <img src={img2} alt="..." /> */}
+                      </div>
+                      <div className="overlay2">
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>

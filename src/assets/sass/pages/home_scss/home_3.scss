@@ -75,16 +75,24 @@
     .f_grid {
       .f_grid_1 {
         position: relative;
+        .overlay1 {
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.767),
+            rgba(255, 255, 0, 0.126)
+          );
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
         .grid_img_1 {
           height: 353px;
           width: 327px;
-  
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-          }
+          background-image: url("http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg");
+          background-position: center;
+          background-size: cover;
         }
         .grid_list {
           position: absolute;
@@ -119,7 +127,7 @@
               }
             }
           }
-  
+
           h4 {
             font-family: "Roboto", sans-serif;
             font-size: 16px;
@@ -142,13 +150,12 @@
               float: left;
               width: calc(100% - 160px);
               ul {
-               
                 li {
                   display: inline-block;
-                  border-right:2px solid white;
+                  border-right: 2px solid white;
                   padding-right: 3px;
                   padding-left: 3px;
-                  &:nth-child(3){
+                  &:nth-child(3) {
                     border-right: none;
                   }
                   .icon_info_2 {
@@ -182,7 +189,7 @@
                     .grid_info_icon_4 {
                       margin-top: 4px;
                       margin-left: -2px;
-  
+
                       .css-i4bv87-MuiSvgIcon-root {
                         height: 20px;
                         width: 25px;
@@ -205,16 +212,24 @@
       }
       .f_grid_2 {
         position: relative;
+        .overlay2 {
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.53),
+            rgba(246, 250, 9, 0.184)
+          );
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
         .grid_img_2 {
           height: 353px;
           width: 327px;
-
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 20px;
-          }
+          background-size: cover;
+          background-position: center;
+          background-image: url(https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202304/villa-design-ideas-that-fuse-beauty-and-functionality/luxury-classic-villa-exterior-design.jpg);
         }
         .grid_list {
           position: absolute;
@@ -231,11 +246,10 @@
             background: #1f4b43;
             width: 84px;
             height: 30px;
-            &:nth-child(2){
-             margin-left: 10px;
-             background: #E7C873;
-             color: black;
-
+            &:nth-child(2) {
+              margin-left: 10px;
+              background: #e7c873;
+              color: black;
             }
           }
         }
@@ -271,7 +285,6 @@
             line-height: 30.4px;
             text-align: left;
             color: #ffffff;
-          
           }
           .grid_flex {
             display: flex;
@@ -281,10 +294,10 @@
               ul {
                 li {
                   display: inline-block;
-                  border-right:2px solid white;
+                  border-right: 2px solid white;
                   padding-right: 3px;
                   padding-left: 3px;
-                  &:nth-child(3){
+                  &:nth-child(3) {
                     border-right: none;
                   }
                   .icon_info_2 {
@@ -345,13 +358,22 @@
       .grid_img_3 {
         height: 353px;
         width: 327px;
+        background-image: url(https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000);
+        background-size: cover;
+        background-position: center;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-        }
+      }
+      .overlay2 {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.53),
+          rgba(246, 250, 9, 0.184)
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
       .grid_list {
         position: absolute;
@@ -411,13 +433,13 @@
             ul {
               li {
                 display: inline-block;
-             
-                  border-right:2px solid white;
-                  padding-right: 3px;
-                  padding-left: 3px;
-                  &:nth-child(3){
-                    border-right: none;
-                  }
+
+                border-right: 2px solid white;
+                padding-right: 3px;
+                padding-left: 3px;
+                &:nth-child(3) {
+                  border-right: none;
+                }
                 .icon_info_2 {
                   display: flex;
                   .grid_info_icon_2 {
@@ -475,14 +497,24 @@
       .grid_img_4 {
         height: 353px;
         width: 327px;
+        background-image: url(https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000);
+        background-size: cover;
+        background-position: center;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-        }
       }
+      .overlay2 {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.53),
+          rgba(246, 250, 9, 0.184)
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      
       .grid_list {
         position: absolute;
         top: 20px;
@@ -498,12 +530,11 @@
           background: #1f4b43;
           width: 84px;
           height: 30px;
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-left: 10px;
-            background: #E7C873;
+            background: #e7c873;
             color: black;
-
-           }
+          }
         }
       }
       .grid_info {
@@ -538,7 +569,6 @@
           line-height: 30.4px;
           text-align: left;
           color: #ffffff;
-          
         }
         .grid_flex {
           display: flex;
@@ -548,12 +578,12 @@
             ul {
               li {
                 display: inline-block;
-                  border-right:2px solid white;
-                  padding-right: 3px;
-                  padding-left: 3px;
-                  &:nth-child(3){
-                    border-right: none;
-                  }
+                border-right: 2px solid white;
+                padding-right: 3px;
+                padding-left: 3px;
+                &:nth-child(3) {
+                  border-right: none;
+                }
                 .icon_info_2 {
                   display: flex;
                   .grid_info_icon_2 {
@@ -668,7 +698,6 @@
           line-height: 30.4px;
           text-align: left;
           color: #ffffff;
-         
         }
         .grid_flex {
           display: flex;
@@ -678,12 +707,12 @@
             ul {
               li {
                 display: inline-block;
-                  border-right:2px solid white;
-                  padding-right: 3px;
-                  padding-left: 3px;
-                  &:nth-child(3){
-                    border-right: none;
-                  }
+                border-right: 2px solid white;
+                padding-right: 3px;
+                padding-left: 3px;
+                &:nth-child(3) {
+                  border-right: none;
+                }
                 .icon_info_2 {
                   display: flex;
                   .grid_info_icon_2 {
@@ -741,13 +770,22 @@
       .grid_img_6 {
         height: 353px;
         width: 327px;
+        background-image: url(https://a0.muscache.com/im/pictures/9c5b85e1-3e67-4e70-92e6-82c5ea7bea7c.jpg?im_w=720);
+        background-position: center;
+        background-size: cover;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-        }
+      }
+      .overlay2 {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.53),
+          rgba(246, 250, 9, 0.184)
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
       .grid_list {
         position: absolute;
@@ -764,12 +802,11 @@
           background: #1f4b43;
           width: 84px;
           height: 30px;
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-left: 10px;
-            background: #E7C873;
+            background: #e7c873;
             color: black;
-
-           }
+          }
         }
       }
       .grid_info {
@@ -813,12 +850,12 @@
             ul {
               li {
                 display: inline-block;
-                  border-right:2px solid white;
-                  padding-right: 3px;
-                  padding-left: 3px;
-                  &:nth-child(3){
-                    border-right: none;
-                  }
+                border-right: 2px solid white;
+                padding-right: 3px;
+                padding-left: 3px;
+                &:nth-child(3) {
+                  border-right: none;
+                }
                 .icon_info_2 {
                   display: flex;
                   .grid_info_icon_2 {
