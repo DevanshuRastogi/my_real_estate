@@ -14,7 +14,7 @@ const ConatctTop = () => {
             <Grid item lg={12} md={12} sm={12} xs={12}>
               <div className="top_card">
                 <Grid container>
-                  <Grid item lg={8} md={8} sm={8} xs={8}>
+                  <Grid item lg={8} md={12} sm={8} xs={8}>
                     <div className="first_card_content">
                       <h3>CONTACT US</h3>
                       <h2>Get in touch with us.</h2>
@@ -28,14 +28,13 @@ const ConatctTop = () => {
                       </p>
                     </div>
                   </Grid>
-                  <Grid item lg={4} md={4} sm={4} xs={4}>
+                  <Grid item lg={4} md={0} sm={4} xs={4}>
                     <div className="first_card_image">
                       <img src={ContactImage} alt="..." />
                     </div>
                   </Grid>
                 </Grid>
               </div>
-            
             </Grid>
           </Grid>
         </Container>

@@ -47,7 +47,7 @@ const ContactForm = () => {
                                 <OutlinedInput
                                   placeholder="Enter Your First Name"
                                   id="fnameId"
-                                  label="First Name"
+                                  //// //  label=""""""
                                 />
                               </FormControl>
                             </Grid>
@@ -63,7 +63,7 @@ const ContactForm = () => {
                                 <OutlinedInput
                                   placeholder="Enter Your Last Name"
                                   id="lnameId"
-                                  label="Last Name"
+                                 // //  label="""""Last Name"
                                 />
                               </FormControl>
                             </Grid>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                                 <OutlinedInput
                                   placeholder="Enter Your Phone Number"
                                   id="phoneId"
-                                  label="Phone Number"
+                                 // //  label="""""Phone Number"
                                   type="tel"
                                 />
                               </FormControl>
@@ -96,7 +96,7 @@ const ContactForm = () => {
                                 <OutlinedInput
                                   placeholder="Enter Your Email Id"
                                   id="emailId"
-                                  label="Email"
+                                 // //  label="""""Email"
                                   type="email"
                                 />
                               </FormControl>
@@ -113,7 +113,7 @@ const ContactForm = () => {
                                 <OutlinedInput
                                   placeholder="Write message"
                                   id="messageId"
-                                  label="Message"
+                                 // //  label="""""Message"
                                   multiline
                                   rows={4}
                                 />

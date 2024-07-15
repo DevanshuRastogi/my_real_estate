@@ -119,7 +119,7 @@
     
           .footer_part_3 {
             text-align: center;
-            justify-self: end;
+            justify-self: center;
            padding: 8px 25px;
             width: 270px;
             height: 200px;
@@ -261,42 +261,1806 @@
 
 }
 
-/* Extra Huge large desktops */
-@media (min-width: 1920px) {}
 
 /* Extra Huge large desktops */
-@media (min-width: 1680px) and (max-width: 1919px) {}
+@media (min-width: 1920px) {
+	
+}
 
 /* Extra Huge large desktops */
-@media (min-width: 1600px) and (max-width: 1679px) {}
+@media (min-width: 1680px) and (max-width: 1919px) {
+
+}
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+	
+}
 
 /* Extra large desktops and mac laptops*/
-@media (min-width: 1400px) and (max-width: 1599px) {}
+@media (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+	.footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
+    
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
+}
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-   
+  .footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
+    
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 11px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
 }
 
 /* Landscape tablets and ipad */
 @media (min-width: 768px) and (max-width: 991px) {
-   
-}
-
-/* Landscape phones and portrait tablets */
-@media (min-width: 576px) and (max-width: 767px) {
+  .footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
     
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
 }
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 361px) and (max-width: 575px) {
-   
+@media (min-width: 544px) and (max-width: 767px) {
+	.footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
+    
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	.footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
+    
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
 }
 
 /* Smaller phones */
 @media (max-width: 360px) {
+	.footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
     
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
 }
 
 /* Smaller phones */
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+  .footer_section{
+    .footer_top_section{
+      background: linear-gradient(
+            164.6deg,
+            #9991f4 -16.94%,
+            rgba(224, 222, 247, 0) 124.1%);
+            .footer_upper {
+              padding: 42px 0 64px  0; 
+              display: grid;
+              grid-template-columns: 246px 250px 250px auto;
+              justify-items: center;
+              .footer_part_1 {
+                // padding-right: 45px;
+        
+                .footer_part_1_h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  // line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 12px;
+                  color: #181a2a;
+                }
+        
+                h4 {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 28px;
+                  text-align: left;
+                  color: #181a2a;
+                  &:nth-child(3){
+                    padding-top:25px ;
+                  }
+                }
+                p {
+                  font-family: "Plus Jakarta Sans", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  text-align: left;
+                  // padding-bottom: 24px;
+                  padding-top: 15px;
+                  color: #696a75;
+               
+              }
+                
+              }
+        
+              
+                .footer_part_2_inner_1 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+                  ul{ li {
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                    
+                  }
+                 
+                  
+                }
+                
+              }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+                .footer_part_2_inner_2 {
+                  h4 {
+                    padding-bottom: 15px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // line-height: 28px;
+                    text-align: left;
+                    // padding-bottom: 12px;
+                    color: #181a2a;
+                  }
+        
+                  a {
+                    font-family: "Inter", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #181a2a;
+                  }
+                  :hover {
+                    color: #0f40b2;
+                    font-weight: bold;
+                  }
+                }
+              
+        
+              .footer_part_3 {
+                text-align: center;
+                justify-self: center;
+               padding: 8px 25px;
+                width: 270px;
+                height: 200px;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px #0f40b2;
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+                  border: 1px solid #dcdddf;
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                  box-shadow: 8px 8px 15px #1845b6;
+                }
+                h4 {
+                  // padding-bottom: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #181a2a;
+                }
+        
+                p {
+                  padding-top: 8px;
+                  font-family: "Inter", sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #696a75;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                  padding: 10px 14px;
+                }
+                .css-f1s99x-MuiFormControl-root-MuiTextField-root{
+                  width: 100%;
+                  padding-top: 22px;
+                }
+                Button {
+                  width:100%;
+                  height: 38px;
+                  margin-top:25px ;
+                  // padding: 12px 20px 12px 20px;
+                  border-radius: 6px;
+                  background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+                }
+              }
+            }
+        
+            
+    
+    }
+    
+    .footer_last_section{
+      background: linear-gradient(90deg, #9890f3 0%, #093daf 100%);
+      .footer_lower {
+        
+        .footer_lower_main{
+        padding: 5px 0 5px 0;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 119px 360px auto;
+        grid-gap: 212px;
+        .lower_1 {
+          width: 100px;
+          height: 30px;
+          padding-top: 5px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+    
+        .lower_2 {
+          padding-top: 10px;
+    
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+        .lower_3 {
+          // padding-left: 22px;
+          padding-top: 10px;
+          ul {
+            li {
+              font-family: "Plus Jakarta Sans", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              display: inline-block;
+              position: relative;
+              margin-right: 2px;
+              margin-left: 8px;
+              color: #ffffff;
+            }
+            li::after {
+              content: "|";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin-top: -1px;
+              margin-right: -8px;
+            }
+            li:last-child::after {
+              display: none;
+            }
+          }
+        }
+      }
+      }
+    }
+    
+    }
+}

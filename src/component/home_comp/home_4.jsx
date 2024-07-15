@@ -1,53 +1,13 @@
+// React component with Swiper slider
 import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import { Container, Grid } from '@mui/material';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
-import { Container } from '@mui/material';
-import { Grid } from '@mui/material';
-
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
-
-const images = [
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg',
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg',
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg',
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg',
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg',
-  'https://ogs.ny.gov/sites/g/files/oee981/files/media/2019/01/gettyimages-173844271.jpeg'
-];
-
-const CustomLeftArrow = ({ onClick }) => {
-  return (
-    <div className="custom-arrow custom-left-arrow" onClick={onClick}>
-      <ArrowBackIos />
-    </div>
-  );
-};
-
-const CustomRightArrow = ({ onClick }) => {
-  return (
-    <div className="custom-arrow custom-right-arrow" onClick={onClick}>
-      <ArrowForwardIos />
-    </div>
-  );
-};
+//  Make sure to import the SCSS file
 
 const Home_4 = () => {
   return (
@@ -55,21 +15,64 @@ const Home_4 = () => {
       <Container>
         <Grid container>
           <Grid item lg={12}>
-            <div className="slider-container">
-              <h2 className="slider-title">See More Properties</h2>
-              <p className="slider-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <Carousel
-                responsive={responsive}
-                infinite
-                customLeftArrow={<CustomLeftArrow />}
-                customRightArrow={<CustomRightArrow />}
+            <div className="slider_parent">
+              <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+        
+                loop={true}
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                  
+                }}
+                pagination={{ clickable: true }}
+                navigation={{
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                }}
+                modules={[EffectCoverflow, Pagination, Navigation]}
+                className="mySwiper"
               >
-                {images.map((src, index) => (
-                  <div key={index} className="slider-card">
-                    <img src={src} alt={`Slide ${index}`} />
-                  </div>
-                ))}
-              </Carousel>
+                <SwiperSlide>
+                  <img src="https://wallpaperaccess.com/full/4722330.jpg" alt="Slide 1" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://i.pinimg.com/originals/71/15/d7/7115d7b189692ef2f4ce327137a54154.jpg" alt="Slide 2" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://myersjackson.com/wp-content/uploads/2020/06/minimal-hero-01.jpg" alt="Slide 3" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://c0.wallpaperflare.com/preview/11/300/916/architectural-design-architecture-blue-sky-buildings.jpg" alt="Slide 4" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://wallpapercave.com/wp/wp4110652.jpg" alt="Slide 5" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://www.jllhomes.co.in/sites/olm_ipin/files/Real%20Estate%20in%20Delhi.png" alt="Slide 6" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://signaturevillas.co.in/wp-content/uploads/2020/01/signature-villas-nv.jpg" alt="Slide 7" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://wallpaperaccess.com/full/4401192.jpg" alt="Slide 8" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Slide 9" />
+                </SwiperSlide>
+                <div className="swiper-button-prev">
+                  <ArrowBackIos />
+                </div>
+                <div className="swiper-button-next">
+                  <ArrowForwardIos />
+                </div>
+              </Swiper>
             </div>
           </Grid>
         </Grid>
