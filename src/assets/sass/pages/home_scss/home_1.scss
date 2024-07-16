@@ -27,7 +27,7 @@
     width: 127px;
     height: 127px;
     top: 263px;
-    right: 535px;
+    right: 441px;
     bottom: 0;
   }
   .eclipse {
@@ -37,7 +37,7 @@
     opacity: 70%;
     width: 127px;
     height: 127px;
-    top: 50px;
+    top: 108px;
     right: 168px;
     bottom: 0;
   }
@@ -49,6 +49,10 @@
 
     .home_1_icon {
       display: flex;
+      display: flex;
+      width: 200px;
+      max-width: 100%;
+  
       .css-29m0ly-MuiSvgIcon-root {
         width: 25px;
         height: 26px;
@@ -68,20 +72,25 @@
 
     .home_1_heading {
       color: #1241b3;
-      padding-bottom: 24px;
-      h1 span {
+      margin-bottom: 24px;
+      width: 320px;
+      max-width: 100%;
+      h1{
         font-family: "Inter", sans-serif;
         font-size: 46px;
         font-weight: 700;
-        line-height: 55.67px;
-        // text-align: left;
-        display: block;
+       
+    
       }
     }
 
     .home_1_para {
       border-left: 1px solid black;
       padding-left: 10px;
+      width: 400px;
+      max-width: 100%;
+         
+      margin-bottom: 50px;
       p {
         font-family: "Inter", sans-serif;
         font-size: 16px;
@@ -89,14 +98,12 @@
         line-height: 25px;
         // text-align: left;
         color: #1e1e1e;
-        width: 400px;
-        max-width: 100%;
-        margin-bottom: 50px;
+    
       }
     }
     .home_image {
-      height: 600px;
-      width: 700px;
+      height: 523px;
+      width: 625px;
       bottom: -118px;
       right: -172px;
       position: absolute;

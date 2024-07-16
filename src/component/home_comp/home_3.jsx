@@ -19,7 +19,7 @@ const Home_3 = () => {
     <section className="featured">
       <Container>
         <Grid Container>
-          <Grid item lg={12}>
+          <Grid item lg={12}  md={12} sm={12} xs={12}>
             <div className="f_prop">
               <div className="f_prop_heading">
                 <h2>Featured Properties</h2>
@@ -28,7 +28,7 @@ const Home_3 = () => {
 
               <div className="f_links">
                 <Grid container>
-                  <Grid item lg={8}>
+                  <Grid item lg={9}  md={9} sm={9} xs={9}>
                     <div className="f_list_1">
                       <ul>
                         <li>
@@ -46,7 +46,7 @@ const Home_3 = () => {
                       </ul>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
+                  <Grid item lg={3} md={3} sm={3} xs={3}>
                     <div className="f_list_2">
                       <a href="javascript:;" aria-label="See All Listing">
                         See All Listing
@@ -58,13 +58,13 @@ const Home_3 = () => {
               </div>
               <div className="f_grid">
                 <Grid container spacing={2}>
-                  <Grid item lg={4}>
-                    <div className="f_grid_1">
+                  <Grid item lg={4} md={4} sm={4} xs={4}>
+                    <div className="f_grid_1 f_grid_all">
                       <div className="grid_img_1">
-                        {/* <img
+                        <img
                           src="http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg"
                           alt="..."
-                        />  */}
+                        /> 
                       </div>
                       <div className="overlay1">
                         <div className="grid_list">
@@ -115,16 +115,21 @@ const Home_3 = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
-                    <div className="f_grid_2">
-                      <div className="grid_img_2">
-                        {/* <img src={img2} alt="..." /> */}
+                  <Grid item lg={4}md={4} sm={4} xs={4}>
+                    <div className="f_grid_2 f_grid_all">
+                      <div className="grid_img_1">
+                      <img
+                          src="https://myersjackson.com/wp-content/uploads/2020/06/minimal-hero-01.jpg"
+                          alt="..."
+                        /> 
                       </div>
-                      <div className="overlay2">
+                      <div className="overlay1">
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
+                        <div className="grid_list_imp">
                         <Button variant="contained">Featured</Button>
+                        </div>
                       </div>
                       <div className="grid_info">
                         <h4>Skyper Pool Apartment</h4>
@@ -170,12 +175,15 @@ const Home_3 = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
-                    <div className="f_grid_3">
-                      <div className="grid_img_3">
-                        {/* <img src={img2} alt="..." /> */}
+                  <Grid item lg={4}md={4} sm={4} xs={4}>
+                    <div className="f_grid_3  f_grid_all">
+                      <div className="grid_img_1">
+                      <img
+                          src="https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202304/villa-design-ideas-that-fuse-beauty-and-functionality/luxury-classic-villa-exterior-design.jpg"
+                          alt="..."
+                        /> 
                       </div>
-                      <div className="overlay2"></div>
+                      <div className="overlay1"></div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
                       </div>
@@ -223,15 +231,20 @@ const Home_3 = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
-                    <div className="f_grid_4">
-                      <div className="grid_img_4">
-                        {/* <img src={img2} alt="..." /> */}
+                  <Grid item lg={4}md={4} sm={4} xs={4}>
+                    <div className="f_grid_4 f_grid_all">
+                      <div className="grid_img_1">
+                      <img
+                          src="https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000"
+                          alt="..."
+                        /> 
                       </div>
-                      <div className="overlay2"></div>
+                      <div className="overlay1"></div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
+                        <div className="grid_list_imp">
                         <Button variant="contained">Featured</Button>
+                        </div>
                       </div>
                       <div className="grid_info">
                         <h4>Skyper Pool Apartment</h4>
@@ -277,10 +290,13 @@ const Home_3 = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
-                    <div className="f_grid_5">
-                      <div className="grid_img_5">
-                        <img src={img2} alt="..." />
+                  <Grid item lg={4}md={4} sm={4} xs={4}>
+                    <div className="f_grid_5 f_grid_all">
+                      <div className="grid_img_1">
+                      <img
+                          src="https://wallpaperaccess.com/full/4401192.jpg"
+                          alt="..."
+                        /> 
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
@@ -329,16 +345,21 @@ const Home_3 = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item lg={4}>
-                    <div className="f_grid_6">
-                      <div className="grid_img_6">
-                        {/* <img src={img2} alt="..." /> */}
+                  <Grid item lg={4}md={4} sm={4} xs={4}>
+                    <div className="f_grid_6 f_grid_all">
+                      <div className="grid_img_1">
+                      <img
+                          src="https://wallpaperaccess.com/full/4722330.jpg"
+                          alt="..."
+                        /> 
                       </div>
-                      <div className="overlay2">
+                      <div className="overlay1">
                       </div>
                       <div className="grid_list">
                         <Button variant="contained">For Sale</Button>
+                        <div className="grid_list_imp">
                         <Button variant="contained">Featured</Button>
+                        </div>
                       </div>
                       <div className="grid_info">
                         <h4>Skyper Pool Apartment</h4>

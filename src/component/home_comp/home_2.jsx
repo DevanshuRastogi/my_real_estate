@@ -12,7 +12,7 @@ const Home_2 = () => {
     <section className="home_2">
       <Container>
         <Grid container>
-          <Grid item lg={12}>
+          <Grid item lg={12} md={12} sm={12} xs={12}>
             <div className="browser_properties">
               <Grid container>
                 <Grid item lg={5}>
@@ -33,11 +33,11 @@ const Home_2 = () => {
                     </div>
                   </div>
                 </Grid>
-                <Grid item lg={7}>
+                <Grid item lg={7} md={7} sm={7} xs={7}>
                   <div className="properties_2">
                     <div className="properties_upper">
                     <Grid container spacing={2}>
-                      <Grid item lg={6}>
+                      <Grid item lg={6} md={6} sm={6} xs={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
                             <img src={icon1} alt="..." />
@@ -50,9 +50,9 @@ const Home_2 = () => {
                           </p>
                         </div>
                       </Grid>
-                      <Grid item lg={6}>
-                        <div className="properties_p2">
-                          <div className="p2_image">
+                      <Grid item lg={6}  md={6} sm={6} xs={6}>
+                        <div className="properties_p1">
+                          <div className="p1_image">
                             <img src={icon2} alt="..." />
                           </div>
                           <h4>Best Price</h4>
@@ -69,9 +69,9 @@ const Home_2 = () => {
 
                    
                     <Grid container spacing={2}>
-                      <Grid item lg={6}>
-                        <div className="properties_p3">
-                          <div className="p3_image">
+                      <Grid item lg={6} md={6} sm={6} xs={6}>
+                        <div className="properties_p1">
+                          <div className="p1_image">
                             <img src={icon3} alt="..." />
                           </div>
                           <h4>Lowest Commission</h4>
@@ -81,9 +81,9 @@ const Home_2 = () => {
                           </p>
                         </div>
                       </Grid>
-                      <Grid item lg={6}>
-                        <div className="properties_p4">
-                          <div className="p4_image">
+                      <Grid item lg={6}  md={6} sm={6} xs={6}>
+                        <div className="properties_p1">
+                          <div className="p1_image">
                             <img src={icon4} alt="..." />
                           </div>
                           <h4>Overall Control</h4>

@@ -1,16 +1,14 @@
 .more_properties {
   .all_prop {
     text-align: center;
-
-    padding: 0px 70px 70px 70px;
-
+    margin-bottom: 60px;
     .prop_upper {
       h2 {
         font-family: "Inter", sans-serif;
         font-size: 32px;
         font-weight: 700;
         line-height: 52px;
-        text-align: left;
+       
         padding-bottom: 16px;
         text-align: center;
       }
@@ -20,7 +18,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 25.6px;
-        text-align: left;
+       
         padding-bottom: 60px;
         text-align: center;
         color: #4d5461;
@@ -29,9 +27,9 @@
 
     .prop_details {
       position: relative;
-      .prop_img_1 {
+      .prop_img_big {
         height: 295px;
-        width: 490px;
+        width: 567px;
 
         img {
           height: 100%;
@@ -39,6 +37,22 @@
           object-fit: cover;
           border-radius: 10px;
         }
+        &::before {
+          content: "";
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.767),
+            rgba(255, 255, 0, 0.126)
+          );
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          border-radius: 10px;
+      }
       }
       .details_head {
         position: absolute;
@@ -49,7 +63,7 @@
           font-size: 13px;
           font-weight: 400;
           line-height: 28.5px;
-          text-align: left;
+          
           font-family: "Roboto", sans-serif;
           color: #ffffff;
         }
@@ -64,9 +78,9 @@
         }
       }
     }
-    .prop_img_2 {
+    .prop_img_small {
       height: 295px;
-      width: 231px;
+      width: 275px;
       border-radius: 10px;
       overflow: hidden;
 
@@ -74,66 +88,29 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        
+        }
+        &::before {
+          content: "";
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.767),
+            rgba(255, 255, 0, 0.126)
+          );
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          border-radius: 10px;
       }
     }
-    .prop_img_3 {
-      height: 295px;
-      width: 231px;
 
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-    }
-    .prop_img_4 {
-      height: 295px;
-      width: 231px;
+      
 
-      &::before {
-        content: "";
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.767),
-          rgba(255, 255, 0, 0.126)
-        );
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        border-radius: 10px;
-      }
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-    }
-    .prop_img_5 {
-      height: 295px;
-      width: 231px;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-    }
-    .prop_img_6 {
-      height: 295px;
-      width: 490px;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-    }
+    
+    
   }
 }

@@ -1,6 +1,5 @@
 .featured {
   .f_prop {
-    padding: 0px 70px 70px 70px;
     .f_prop_heading {
       h2 {
         font-family: "Inter", sans-serif;
@@ -16,7 +15,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 25.6px;
-        text-align: left;
+        
         text-align: center;
         color: #4d5461;
         padding-bottom: 20px;
@@ -25,11 +24,11 @@
 
     .f_links {
       padding-bottom: 69px;
-      padding-left: 200px;
-      .f_list_1 {
-        padding-left: 88px;
-        text-align: center;
 
+      .f_list_1 {
+        display: flex;
+        justify-content: end;
+        padding-right: 50px;
         ul {
           li {
             display: inline-block;
@@ -50,7 +49,7 @@
               font-size: 15px;
               font-weight: 500;
               line-height: 30.4px;
-              text-align: left;
+            
               color: #1a1a1a;
             }
           }
@@ -73,26 +72,34 @@
       }
     }
     .f_grid {
-      .f_grid_1 {
+      .f_grid_all {
         position: relative;
-        .overlay1 {
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.767),
-            rgba(255, 255, 0, 0.126)
-          );
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
         .grid_img_1 {
           height: 353px;
-          width: 327px;
-          background-image: url("http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg");
-          background-position: center;
-          background-size: cover;
+          width: 372px;
+          border-radius: 20px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+          &::before {
+            content: "";
+            background: linear-gradient(
+              to top,
+              rgba(0, 0, 0, 0.767),
+              rgba(255, 255, 0, 0.126)
+            );
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 20px;
+          }
         }
         .grid_list {
           position: absolute;
@@ -104,168 +111,43 @@
             font-size: 10px;
             font-weight: 500;
             line-height: 33px;
-            text-align: left;
+          
             border-radius: 30px;
             background: #1f4b43;
             width: 84px;
             height: 30px;
           }
-        }
-        .grid_info {
-          position: absolute;
-          bottom: 25px;
-          left: 15px;
-          .icon_info_1 {
-            display: flex;
-            p{
-              color: black;
-            }
-            .grid_info_icon_1 {
-              margin-top: 4px;
-              margin-left: -7px;
+          .grid_list_imp {
+            position: absolute;
+            top: 0px;
+            left: 90px;
+            Button {
+              color:#1F4B43;
+
+              font-family: "Roboto", sans-serif;
+              font-size: 10px;
+              font-weight: 500;
+              line-height: 33px;
               
-              .css-i4bv87-MuiSvgIcon-root {
-                height: 20px;
-                width: 25px;
-                color: white;
-              }
-            }
-          }
-
-          h4 {
-            font-family: "Roboto", sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 22.8px;
-            text-align: left;
-            color: #ffffff;
-          }
-          p {
-            font-family: "Roboto", sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 30.4px;
-            text-align: left;
-            color: #ffffff;
-          }
-          .grid_flex {
-            display: flex;
-            .grid_flex_left {
-              float: left;
-              width: calc(100% - 160px);
-              ul {
-                li {
-                  display: inline-block;
-                  border-right: 2px solid white;
-                  padding-right: 3px;
-                  padding-left: 3px;
-                  &:nth-child(3) {
-                    border-right: none;
-                  }
-                  .icon_info_2 {
-                    display: flex;
-                    .grid_info_icon_2 {
-                      margin-top: 4px;
-                      margin-left: -2px;
-                      margin-right: 2px;
-                      .css-i4bv87-MuiSvgIcon-root {
-                        height: 20px;
-                        width: 25px;
-                        color: white;
-                      }
-                    }
-                  }
-                  .icon_info_3 {
-                    display: flex;
-                    .grid_info_icon_3 {
-                      margin-top: 4px;
-                      margin-left: -2px;
-                      margin-right: 2px;
-                      .css-i4bv87-MuiSvgIcon-root {
-                        height: 20px;
-                        width: 25px;
-                        color: white;
-                      }
-                    }
-                  }
-                  .icon_info_4 {
-                    display: flex;
-                    .grid_info_icon_4 {
-                      margin-top: 4px;
-                      margin-left: -2px;
-
-                      .css-i4bv87-MuiSvgIcon-root {
-                        height: 20px;
-                        width: 25px;
-                        color: white;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .grid_flex_right {
-            float: right;
-            width: 160px;
-            p {
-              text-align: end;
-            }
-          }
-        }
-      }
-      .f_grid_2 {
-        position: relative;
-        .overlay2 {
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.53),
-            rgba(246, 250, 9, 0.184)
-          );
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-        .grid_img_2 {
-          height: 353px;
-          width: 327px;
-          background-size: cover;
-          background-position: center;
-          background-image: url(https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202304/villa-design-ideas-that-fuse-beauty-and-functionality/luxury-classic-villa-exterior-design.jpg);
-        }
-        .grid_list {
-          position: absolute;
-          top: 20px;
-          left: 15px;
-          Button {
-            color: #ffffff;
-            font-family: "Roboto", sans-serif;
-            font-size: 10px;
-            font-weight: 500;
-            line-height: 33px;
-            text-align: left;
-            border-radius: 30px;
-            background: #1f4b43;
-            width: 84px;
-            height: 30px;
-            &:nth-child(2) {
-              margin-left: 10px;
+              border-radius: 30px;
               background: #e7c873;
-              color: black;
+              width: 84px;
+              height: 30px;
             }
           }
         }
         .grid_info {
           position: absolute;
           bottom: 25px;
-          left: 15px;
+          right: 27px;
+          left: 27px;
           .icon_info_1 {
             display: flex;
+
             .grid_info_icon_1 {
               margin-top: 4px;
               margin-left: -7px;
+
               .css-i4bv87-MuiSvgIcon-root {
                 height: 20px;
                 width: 25px;
@@ -279,7 +161,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 22.8px;
-            text-align: left;
+          
             color: #ffffff;
           }
           p {
@@ -287,7 +169,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 30.4px;
-            text-align: left;
+           
             color: #ffffff;
           }
           .grid_flex {
@@ -353,561 +235,6 @@
             p {
               text-align: end;
             }
-          }
-        }
-      }
-    }
-    .f_grid_3 {
-      position: relative;
-      .grid_img_3 {
-        height: 353px;
-        width: 327px;
-        background-image: url(https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000);
-        background-size: cover;
-        background-position: center;
-
-      }
-      .overlay2 {
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.53),
-          rgba(246, 250, 9, 0.184)
-        );
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .grid_list {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        Button {
-          color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-size: 10px;
-          font-weight: 500;
-          line-height: 33px;
-          text-align: left;
-          border-radius: 30px;
-          background: #1f4b43;
-          width: 84px;
-          height: 30px;
-        }
-      }
-      .grid_info {
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        .icon_info_1 {
-          display: flex;
-          .grid_info_icon_1 {
-            margin-top: 4px;
-            margin-left: -7px;
-            .css-i4bv87-MuiSvgIcon-root {
-              height: 20px;
-              width: 25px;
-              color: white;
-            }
-          }
-        }
-
-        h4 {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.8px;
-          text-align: left;
-          color: #ffffff;
-        }
-        p {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 30.4px;
-          text-align: left;
-          color: #ffffff;
-        }
-        .grid_flex {
-          display: flex;
-          .grid_flex_left {
-            float: left;
-            width: calc(100% - 160px);
-            ul {
-              li {
-                display: inline-block;
-
-                border-right: 2px solid white;
-                padding-right: 3px;
-                padding-left: 3px;
-                &:nth-child(3) {
-                  border-right: none;
-                }
-                .icon_info_2 {
-                  display: flex;
-                  .grid_info_icon_2 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_3 {
-                  display: flex;
-                  .grid_info_icon_3 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_4 {
-                  display: flex;
-                  .grid_info_icon_4 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .grid_flex_right {
-          float: right;
-          width: 160px;
-          p {
-            text-align: end;
-          }
-        }
-      }
-    }
-    .f_grid_4 {
-      position: relative;
-      .grid_img_4 {
-        height: 353px;
-        width: 327px;
-        background-image: url(https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000);
-        background-size: cover;
-        background-position: center;
-
-      }
-      .overlay2 {
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.53),
-          rgba(246, 250, 9, 0.184)
-        );
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      
-      .grid_list {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        Button {
-          color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-size: 10px;
-          font-weight: 500;
-          line-height: 33px;
-          text-align: left;
-          border-radius: 30px;
-          background: #1f4b43;
-          width: 84px;
-          height: 30px;
-          &:nth-child(2) {
-            margin-left: 10px;
-            background: #e7c873;
-            color: black;
-          }
-        }
-      }
-      .grid_info {
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        .icon_info_1 {
-          display: flex;
-          .grid_info_icon_1 {
-            margin-top: 4px;
-            margin-left: -7px;
-            .css-i4bv87-MuiSvgIcon-root {
-              height: 20px;
-              width: 25px;
-              color: white;
-            }
-          }
-        }
-
-        h4 {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.8px;
-          text-align: left;
-          color: #ffffff;
-        }
-        p {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 30.4px;
-          text-align: left;
-          color: #ffffff;
-        }
-        .grid_flex {
-          display: flex;
-          .grid_flex_left {
-            float: left;
-            width: calc(100% - 160px);
-            ul {
-              li {
-                display: inline-block;
-                border-right: 2px solid white;
-                padding-right: 3px;
-                padding-left: 3px;
-                &:nth-child(3) {
-                  border-right: none;
-                }
-                .icon_info_2 {
-                  display: flex;
-                  .grid_info_icon_2 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_3 {
-                  display: flex;
-                  .grid_info_icon_3 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_4 {
-                  display: flex;
-                  .grid_info_icon_4 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .grid_flex_right {
-          float: right;
-          width: 160px;
-          p {
-            text-align: end;
-          }
-        }
-      }
-    }
-    .f_grid_5 {
-      position: relative;
-      .grid_img_5 {
-        height: 353px;
-        width: 327px;
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 10px;
-        }
-      }
-      .grid_list {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        Button {
-          color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-size: 10px;
-          font-weight: 500;
-          line-height: 33px;
-          text-align: left;
-          border-radius: 30px;
-          background: #1f4b43;
-          width: 84px;
-          height: 30px;
-        }
-      }
-      .grid_info {
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        .icon_info_1 {
-          display: flex;
-          .grid_info_icon_1 {
-            margin-top: 4px;
-            margin-left: -7px;
-            .css-i4bv87-MuiSvgIcon-root {
-              height: 20px;
-              width: 25px;
-              color: white;
-            }
-          }
-        }
-
-        h4 {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.8px;
-          text-align: left;
-          color: #ffffff;
-        }
-        p {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 30.4px;
-          text-align: left;
-          color: #ffffff;
-        }
-        .grid_flex {
-          display: flex;
-          .grid_flex_left {
-            float: left;
-            width: calc(100% - 160px);
-            ul {
-              li {
-                display: inline-block;
-                border-right: 2px solid white;
-                padding-right: 3px;
-                padding-left: 3px;
-                &:nth-child(3) {
-                  border-right: none;
-                }
-                .icon_info_2 {
-                  display: flex;
-                  .grid_info_icon_2 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_3 {
-                  display: flex;
-                  .grid_info_icon_3 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_4 {
-                  display: flex;
-                  .grid_info_icon_4 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .grid_flex_right {
-          float: right;
-          width: 160px;
-          p {
-            text-align: end;
-          }
-        }
-      }
-    }
-    .f_grid_6 {
-      position: relative;
-      .grid_img_6 {
-        height: 353px;
-        width: 327px;
-        background-image: url(https://a0.muscache.com/im/pictures/9c5b85e1-3e67-4e70-92e6-82c5ea7bea7c.jpg?im_w=720);
-        background-position: center;
-        background-size: cover;
-
-      }
-      .overlay2 {
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.53),
-          rgba(246, 250, 9, 0.184)
-        );
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .grid_list {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        Button {
-          color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-size: 10px;
-          font-weight: 500;
-          line-height: 33px;
-          text-align: left;
-          border-radius: 30px;
-          background: #1f4b43;
-          width: 84px;
-          height: 30px;
-          &:nth-child(2) {
-            margin-left: 10px;
-            background: #e7c873;
-            color: black;
-          }
-        }
-      }
-      .grid_info {
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-        .icon_info_1 {
-          display: flex;
-          .grid_info_icon_1 {
-            margin-top: 4px;
-            margin-left: -7px;
-            .css-i4bv87-MuiSvgIcon-root {
-              height: 20px;
-              width: 25px;
-              color: white;
-            }
-          }
-        }
-
-        h4 {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.8px;
-          text-align: left;
-          color: #ffffff;
-        }
-        p {
-          font-family: "Roboto", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 30.4px;
-          text-align: left;
-          color: #ffffff;
-        }
-        .grid_flex {
-          display: flex;
-          .grid_flex_left {
-            float: left;
-            width: calc(100% - 160px);
-            ul {
-              li {
-                display: inline-block;
-                border-right: 2px solid white;
-                padding-right: 3px;
-                padding-left: 3px;
-                &:nth-child(3) {
-                  border-right: none;
-                }
-                .icon_info_2 {
-                  display: flex;
-                  .grid_info_icon_2 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_3 {
-                  display: flex;
-                  .grid_info_icon_3 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-                    margin-right: 2px;
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-                .icon_info_4 {
-                  display: flex;
-                  .grid_info_icon_4 {
-                    margin-top: 4px;
-                    margin-left: -2px;
-
-                    .css-i4bv87-MuiSvgIcon-root {
-                      height: 20px;
-                      width: 25px;
-                      color: white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        .grid_flex_right {
-          float: right;
-          width: 160px;
-          p {
-            text-align: end;
           }
         }
       }
