@@ -1,8 +1,8 @@
 .singleblog_page {
-  padding: 90px 0 128px;
+  padding-bottom: 90px;
   .detail_main {
     h1 {
-      font-family: "Inter";
+      // font-family: "Inter";
       font-size: 36px;
       font-weight: 600;
       line-height: 50px;
@@ -36,10 +36,12 @@
     }
     .detail_page_img {
       overflow: hidden;
+      width: 1146px;
+      border-radius: 12px;
+      height: 462px;
       img {
-        width: 1146px;
-        border-radius: 12px;
-        height: 462px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         margin-top: 36px;
       }

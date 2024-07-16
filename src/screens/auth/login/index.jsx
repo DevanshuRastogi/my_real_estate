@@ -3,7 +3,7 @@ import loginhandImage from "./../../../assets/images/loginhand.jpg";
 import mainlogo from "./../../../assets/images/mainlogo.png";
 import { Container, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 // import FilledInput from '@mui/material/FilledInput';
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -53,56 +53,60 @@ const Login = () => {
 
                       <div className="form_fields">
                         <Grid container columnSpacing={5}>
-                          <Grid item  lg={12} md={12} sm={12} xs={12} >
+                          <Grid item lg={12} md={12} sm={12} xs={12}>
                             <div autoComplete="off" className="email_field">
-                              <FormControl variant="standard">
-                                <InputLabel htmlFor="component-helper" shrink>
-                                  <b>Email</b>
-                                </InputLabel>
-                                <Input
-                                  placeholder="Enter your email address"
-                                  id="component-helper"
-                                  startAdornment={
-                                    <InputAdornment position="start">
-                                      <MailOutlineIcon />
-                                    </InputAdornment>
-                                  }
-                                />
-                              </FormControl>
+                            <FormControl variant="standard">
+                              <InputLabel
+                                htmlFor="component-helper"
+                                shrink
+                                autoComplete="off"
+                              >
+                                <b>Email</b>
+                              </InputLabel>
+                              <Input
+                                placeholder="Enter your email address"
+                                id="component-helper"
+                                startAdornment={
+                                  <InputAdornment position="start">
+                                    <MailOutlineIcon />
+                                  </InputAdornment>
+                                }
+                              />
+                            </FormControl>
                             </div>
                           </Grid>
-                          <Grid item  lg={12} md={12} sm={12} xs={12} >
+                          <Grid item lg={12} md={12} sm={12} xs={12}>
                             <div autoComplete="off" className="pass_field">
-                              <FormControl variant="standard">
-                                <InputLabel htmlFor="pass-comp" shrink>
-                                  <b>Password</b>
-                                </InputLabel>
-                                <Input
-                                  placeholder="Enter your Password"
-                                  id="pass-comp"
-                                  type={showPassword ? "text" : "password"}
-                                  startAdornment={
-                                    <InputAdornment position="start">
-                                      <LockOutlinedIcon />
-                                    </InputAdornment>
-                                  }
-                                  endAdornment={
-                                    <InputAdornment position="end">
-                                      <IconButton
-                                        aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
-                                        onMouseDown={handleMouseDownPassword}
-                                      >
-                                        {showPassword ? (
-                                          <VisibilityOff />
-                                        ) : (
-                                          <Visibility />
-                                        )}
-                                      </IconButton>
-                                    </InputAdornment>
-                                  }
-                                />
-                              </FormControl>
+                            <FormControl variant="standard">
+                              <InputLabel htmlFor="pass-comp" shrink>
+                                <b>Password</b>
+                              </InputLabel>
+                              <Input
+                                placeholder="Enter your Password"
+                                id="pass-comp"
+                                type={showPassword ? "text" : "password"}
+                                startAdornment={
+                                  <InputAdornment position="start">
+                                    <LockOutlinedIcon />
+                                  </InputAdornment>
+                                }
+                                endAdornment={
+                                  <InputAdornment position="end">
+                                    <IconButton
+                                      aria-label="toggle password visibility"
+                                      onClick={handleClickShowPassword}
+                                      onMouseDown={handleMouseDownPassword}
+                                    >
+                                      {showPassword ? (
+                                        <VisibilityOff />
+                                      ) : (
+                                        <Visibility />
+                                      )}
+                                    </IconButton>
+                                  </InputAdornment>
+                                }
+                              />
+                            </FormControl>
                             </div>
                           </Grid>
                           <Grid item lg={12} md={12} sm={12} xs={12}>
@@ -114,7 +118,9 @@ const Login = () => {
                                 />
                               </div>
                               <div className="forgot_link">
-                              <NavLink to="/resetpass">Forgot Password</NavLink>
+                                <NavLink to="/resetpass">
+                                  Forgot Password
+                                </NavLink>
                               </div>
                             </div>
                           </Grid>

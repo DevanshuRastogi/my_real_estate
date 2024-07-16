@@ -28,7 +28,6 @@ const SingleBlog = () => {
                   <img src={image} alt={title} />
                 </div>
                 <div className="para_divs">
-                  <div>
                     <p>
                       {content} Lorem ipsum dolor sit amet, consectetur
                       adipisicing elit. Fugiat praesentium saepe amet laborum
@@ -45,8 +44,6 @@ const SingleBlog = () => {
                       corporis earum similique alias consequuntur illum
                       quibusdam porro nam.
                     </p>
-                  </div>
-                  <div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Magnam natus adipisci ducimus eveniet hic voluptates
@@ -66,9 +63,6 @@ const SingleBlog = () => {
                       fugiat explicabo iste tenetur non officia, sint blanditiis
                       sunt.
                     </p>
-                  </div>
-
-                  <div>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Aliquam sapiente nisi voluptate accusamus, harum
@@ -83,8 +77,6 @@ const SingleBlog = () => {
                       perspiciatis dolor? Dolorum quam corrupti blanditiis,
                       magnam expedita itaque fuga!
                     </p>
-                  </div>
-                  <div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Ratione, suscipit eveniet. Rem ad libero debitis obcaecati
@@ -104,7 +96,6 @@ const SingleBlog = () => {
                       tenetur deserunt voluptas, obcaecati quae, dolorem odio
                       consequuntur in?
                     </p>
-                  </div>
                 </div>
               </div>
             </Grid>
