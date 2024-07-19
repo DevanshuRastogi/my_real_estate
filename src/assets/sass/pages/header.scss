@@ -33,11 +33,11 @@
         li {
           // display: inline;
           // margin-right: 48px;
-          font-family: "Inter";
+          //font-family: "Inter";
           font-size: 16px;
           font-weight: 500;
           line-height: 24px;
-          text-align: left;
+          
           a {
             color: #000929;
           }
@@ -59,15 +59,14 @@
         background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
         width: 78px;
         height: 31px;
-        font-family: "Inter";
+        //font-family: "Inter";
         font-size: 14px;
         font-weight: 500;
-        line-height: 24px;
         text-align: center;
-      }
-      &:hover {
-        transform: scale(1.03);
-        box-shadow: 2px 2px 7px #1845b6;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 2px 2px 7px #1845b6;
+        }
       }
     }
 
@@ -134,7 +133,7 @@
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
-            text-align: left;
+            
             a {
               color: #000929;
             }
@@ -207,7 +206,7 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 24px;
-            text-align: left;
+            
             a {
               color: #000929;
             }
@@ -283,7 +282,7 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 24px;
-            text-align: left;
+            
             a {
               color: #000929;
             }

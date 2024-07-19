@@ -19,7 +19,7 @@ const Header = () => {
               <div className="header_part_2">
                 <ul>
                   <li><NavLink to="/homepage">Homepage</NavLink></li>
-                  <li><a href="javascript:;">Buy</a></li> {/* Not linked */}
+                  <li><NavLink to="/buy">Buy</NavLink></li> {/* Not linked */}
                   <li><NavLink to="/about">About Us</NavLink></li>
                   <li><a href="javascript:;">Sell</a></li> {/* Not linked */}
                   <li><NavLink to="/blogpage">Blogs</NavLink></li>
