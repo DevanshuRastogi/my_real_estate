@@ -52,16 +52,16 @@ const Login = () => {
                       </p>
 
                       <div className="form_fields">
-                        <Grid container columnSpacing={5}>
-                          <Grid item lg={12} md={12} sm={12} xs={12}>
-                            <div autoComplete="off" className="email_field">
+                        {/* <Grid container columnSpacing={5}>
+                          <Grid item lg={12} md={12} sm={12} xs={12}> */}
+                            <div autoComplete="off" className="email_field common_field">
                             <FormControl variant="standard">
                               <InputLabel
                                 htmlFor="component-helper"
                                 shrink
                                 autoComplete="off"
                               >
-                                <b>Email</b>
+                                Email
                               </InputLabel>
                               <Input
                                 placeholder="Enter your email address"
@@ -74,9 +74,9 @@ const Login = () => {
                               />
                             </FormControl>
                             </div>
-                          </Grid>
-                          <Grid item lg={12} md={12} sm={12} xs={12}>
-                            <div autoComplete="off" className="pass_field">
+                          {/* </Grid> */}
+                          {/* <Grid item lg={12} md={12} sm={12} xs={12}> */}
+                            <div autoComplete="off" className="pass_field common_field">
                             <FormControl variant="standard">
                               <InputLabel htmlFor="pass-comp" shrink>
                                 <b>Password</b>
@@ -108,8 +108,8 @@ const Login = () => {
                               />
                             </FormControl>
                             </div>
-                          </Grid>
-                          <Grid item lg={12} md={12} sm={12} xs={12}>
+                          {/* </Grid> */}
+                          {/* <Grid item lg={12} md={12} sm={12} xs={12}> */}
                             <div className="check_forgot">
                               <div className="checky_box">
                                 <FormControlLabel
@@ -123,13 +123,13 @@ const Login = () => {
                                 </NavLink>
                               </div>
                             </div>
-                          </Grid>
-                          <Grid item lg={12} md={12} sm={12} xs={12}>
+                          {/* </Grid> */}
+                          {/* <Grid item lg={12} md={12} sm={12} xs={12}> */}
                             <div className="submit_btn">
                               <Button variant="contained">Login</Button>
                             </div>
-                          </Grid>
-                        </Grid>
+                          {/* </Grid> */}
+                        {/* </Grid> */}
                       </div>
                     </div>
                   </div>

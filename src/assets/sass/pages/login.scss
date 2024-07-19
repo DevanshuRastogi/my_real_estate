@@ -13,7 +13,7 @@
       }
 
       .inner_left_container {
-        // border: 1px solid black;
+        // border: 1px solid transparent;
         position: relative;
         width: 100%;
 
@@ -21,6 +21,8 @@
           width: 150px;
           height: 40px;
           position: absolute;
+          top: 0;
+          left: 0;
           // padding-top: 15px;
           // border: 2px dotted rgb(120, 3, 255);
           img {
@@ -39,6 +41,7 @@
           justify-content: center;
           // border: 1px solid black;
           margin: 35px auto 0;
+          margin-top: 0;
 
           h3 {
             font-family: "Rozha One", serif;
@@ -46,7 +49,7 @@
             font-size: 30px;
           }
           p {
-            font-family: "Inter", sans-serif;
+            //font-family: "Inter", sans-serif;
             font-weight: 600;
             font-size: 16px;
             color: #4d5e80;
@@ -60,7 +63,7 @@
           }
           .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
             color: #7d8fb3;
-            font-family: "Inter", "sans-serif";
+            //font-family: "Inter", "sans-serif";
             font-size: 16px;
           }
 
@@ -72,68 +75,91 @@
                 width: 210px;
               }
 
-              b {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-              }
-              Input {
-                width: 200px;
-              }
-              //.login_page_outer.signup .inner_main_container .inner_left_container .form_section_all .css-1eed5fa-MuiInputBase-root-MuiInput-root
-              ::placeholder {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-                font-size: 13px;
-              }
-              :focus-visible {
-                opacity: 5;
-                color: #0f40b2;
+              color: #4d5e80;
+
+              // Input {
+              .MuiFormControl-root {
+                .MuiFormLabel-root {
+                  //font-family: "Inter", sans-serif;
+                  font-weight: 900;
+                }
+
+                .MuiInputBase-root {
+                  .MuiInputBase-input {
+                    font-size: 13px;
+                    color: black;
+                    font-weight: 400;
+
+                    &::placeholder {
+                      //font-family: "Inter", sans-serif;
+                      font-weight: 900;
+                      font-size: 13px;
+                    }
+                    &:focus-visible {
+                      &::placeholder {
+                        opacity: 1;
+                        color: #0f40b2;
+                      }
+                    }
+                  }
+                }
               }
             }
 
             .email_field {
-              color: red;
               padding-top: 30px;
 
-              b {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-              }
-              Input {
+              color: #4d5e80;
+
+              // Input {
+              .MuiFormControl-root {
                 width: 410px;
-              }
-
-              ::placeholder {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-                font-size: 13px;
-              }
-              :focus-visible {
-                opacity: 5;
-                color: #0f40b2;
-              }
-            }
-            .pass_field {
-              margin-top: 30px;
-              .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-                color: #4d5e80;
-              }
-              Input {
-                width: 441px;
-                color: #4d5e80;
-
-                &::placeholder {
-                  font-family: "Inter", sans-serif;
+                .MuiFormLabel-root {
+                  //font-family: "Inter", sans-serif;
                   font-weight: 900;
-                  color: #0f4ff2;
-                  font-size: 13px;
+                }
+
+                .MuiInputBase-root {
+                  .MuiInputBase-input {
+                    font-size: 13px;
+                    color: black;
+                    font-weight: 400;
+
+                    &::placeholder {
+                      //font-family: "Inter", sans-serif;
+                      font-weight: 900;
+                      font-size: 13px;
+                    }
+                    &:focus-visible {
+                      &::placeholder {
+                        opacity: 1;
+                        color: #0f40b2;
+                      }
+                    }
+                  }
                 }
               }
-              b {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-              }
             }
+            // .pass_field {
+            //   margin-top: 30px;
+            //   b {
+            //     //font-family: "Inter", sans-serif;
+            //     font-weight: 900;
+            //   }
+            //   Input {
+            //     width: 410px;
+            //   }
+
+            //   ::placeholder {
+            //     //font-family: "Inter", sans-serif;
+            //     font-weight: 900;
+            //     font-size: 13px;
+            //   }
+            //   :focus-visible {
+            //     opacity: 5;
+            //     color: #0f40b2;
+            //   }
+            // }
 
             .submit_btn {
               padding-top: 53px;
@@ -146,7 +172,7 @@
                 );
                 width: 434px;
                 height: 49px;
-                font-family: "Inter", sans-serif;
+                //font-family: "Inter", sans-serif;
 
                 font-size: 18px;
                 font-weight: 700;
@@ -217,7 +243,7 @@
             font-size: 30px;
           }
           p {
-            font-family: "Inter", sans-serif;
+            //font-family: "Inter", sans-serif;
             font-weight: 600;
             font-size: 16px;
             color: #4d5e80;
@@ -232,7 +258,7 @@
           }
           .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
             color: #161921;
-            font-family: "Inter", "sans-serif";
+            //font-family: "Inter", "sans-serif";
             font-size: 16px;
             font-weight: 600;
             line-height: 20px;
@@ -244,24 +270,34 @@
 
             .email_field {
               color: #4d5e80;
-              padding-top: 30px;
 
-              b {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-              }
-              Input {
+              // Input {
+              .MuiFormControl-root {
                 width: 410px;
-              }
+                .MuiFormLabel-root {
+                  //font-family: "Inter", sans-serif;
+                  font-weight: 900;
+                }
 
-              ::placeholder {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-                font-size: 13px;
-              }
-              :focus-visible {
-                opacity: 5;
-                color: #0f40b2;
+                .MuiInputBase-root {
+                  .MuiInputBase-input {
+                    font-size: 13px;
+                    color: black;
+                    font-weight: 400;
+
+                    &::placeholder {
+                      //font-family: "Inter", sans-serif;
+                      font-weight: 900;
+                      font-size: 13px;
+                    }
+                    &:focus-visible {
+                      &::placeholder {
+                        opacity: 1;
+                        color: #0f40b2;
+                      }
+                    }
+                  }
+                }
               }
             }
 
@@ -276,7 +312,7 @@
                 );
                 width: 434px;
                 height: 49px;
-                font-family: "Inter", sans-serif;
+                //font-family: "Inter", sans-serif;
 
                 font-size: 18px;
                 font-weight: 700;
@@ -351,7 +387,7 @@
             font-size: 30px;
           }
           p {
-            font-family: "Inter", sans-serif;
+            //font-family: "Inter", sans-serif;
             font-weight: 600;
             font-size: 16px;
             color: #4d5e80;
@@ -365,34 +401,34 @@
           }
           .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
             color: #7d8fb3;
-            font-family: "Inter", "sans-serif";
+            //font-family: "Inter", "sans-serif";
             font-size: 16px;
           }
 
           .form_fields {
             padding-top: 9px;
             // background-color: yellow;
-            .pass_field {
-              margin-top: 26px;
-              .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-                color: #4d5e80;
-              }
-              Input {
-                width: 441px;
-              }
-              :focus {
-                color: #0f4ff2;
-              }
-              ::placeholder {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-                font-size: 13px;
-              }
-              b {
-                font-family: "Inter", sans-serif;
-                font-weight: 900;
-              }
-            }
+            // .pass_field {
+            //   margin-top: 26px;
+            //   .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+            //     color: #4d5e80;
+            //   }
+            //   Input {
+            //     width: 441px;
+            //   }
+            //   :focus {
+            //     color: #0f4ff2;
+            //   }
+            //   ::placeholder {
+            //     //font-family: "Inter", sans-serif;
+            //     font-weight: 900;
+            //     font-size: 13px;
+            //   }
+            //   b {
+            //     //font-family: "Inter", sans-serif;
+            //     font-weight: 900;
+            //   }
+            // }
 
             .submit_btn {
               // padding-top: 170px;
@@ -405,7 +441,7 @@
                 );
                 width: 434px;
                 height: 49px;
-                font-family: "Inter", sans-serif;
+                //font-family: "Inter", sans-serif;
 
                 font-size: 18px;
                 font-weight: 700;
@@ -481,7 +517,7 @@
           font-size: 30px;
         }
         p {
-          font-family: "Inter", sans-serif;
+          //font-family: "Inter", sans-serif;
           font-weight: 600;
           font-size: 16px;
           color: #4d5e80;
@@ -495,7 +531,7 @@
         }
         .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
           color: #7d8fb3;
-          font-family: "Inter", "sans-serif";
+          //font-family: "Inter", "sans-serif";
           font-size: 16px;
         }
 
@@ -503,46 +539,72 @@
           padding-top: 56px;
           // background-color: yellow;
 
-          .email_field {
+          .common_field {
             color: #4d5e80;
 
-            b {
-              font-family: "Inter", sans-serif;
-              font-weight: 900;
-            }
-
-            Input {
+            // Input {
+            .MuiFormControl-root {
               width: 410px;
-              color: black;
-              &::placeholder {
-                font-family: "Inter", sans-serif;
+              .MuiFormLabel-root {
+                //font-family: "Inter", sans-serif;
                 font-weight: 900;
-                font-size: 13px;
-                color: #0f40b2;
+              }
+
+              .MuiInputBase-root {
+                .MuiInputBase-input {
+                  font-size: 13px;
+                  color: black;
+                  font-weight: 400;
+
+                  &::placeholder {
+                    //font-family: "Inter", sans-serif;
+                    font-weight: 900;
+                    font-size: 13px;
+                  }
+                  &:focus-visible {
+                    &::placeholder {
+                      opacity: 1;
+                      color: #0f40b2;
+                    }
+                  }
+                }
               }
             }
           }
           .pass_field {
             margin-top: 49px;
-            .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-              color: #4d5e80;
-            }
-            Input {
-              width: 441px;
-            }
-            :focus {
-              color: #0f4ff2;
-            }
-            ::placeholder {
-              font-family: "Inter", sans-serif;
-              font-weight: 900;
-              font-size: 13px;
-            }
-            b {
-              font-family: "Inter", sans-serif;
-              font-weight: 900;
+            color: #4d5e80;
+
+            // Input {
+            .MuiFormControl-root {
+              width: 410px;
+              .MuiFormLabel-root {
+                //font-family: "Inter", sans-serif;
+                font-weight: 900;
+              }
+
+              .MuiInputBase-root {
+                .MuiInputBase-input {
+                  font-size: 13px;
+                  color: black;
+                  font-weight: 400;
+
+                  &::placeholder {
+                    //font-family: "Inter", sans-serif;
+                    font-weight: 900;
+                    font-size: 13px;
+                  }
+                  &:focus-visible {
+                    &::placeholder {
+                      opacity: 1;
+                      color: #0f40b2;
+                    }
+                  }
+                }
+              }
             }
           }
+          // }
           .check_forgot {
             // width: 440px;
             display: flex;
@@ -552,14 +614,14 @@
             align-items: center;
             justify-content: space-between;
             .css-ahj2mt-MuiTypography-root {
-              font-family: "Inter", "sans-serif";
+              //font-family: "Inter", "sans-serif";
               font-weight: 900;
               font-size: 13px;
             }
 
             .css-1xylxj1-MuiTypography-root-MuiLink-root {
               margin: 0;
-              font-family: "Inter", "sans-serif";
+              //font-family: "Inter", "sans-serif";
               font-weight: 900;
               font-size: 13px;
               color: #1c48b8;
@@ -574,7 +636,7 @@
               background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
               width: 434px;
               height: 49px;
-              font-family: "Inter", sans-serif;
+              //font-family: "Inter", sans-serif;
 
               font-size: 18px;
               font-weight: 700;
