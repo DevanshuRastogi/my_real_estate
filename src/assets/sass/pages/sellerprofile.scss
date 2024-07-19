@@ -1,0 +1,267 @@
+// src/styles/SellerProfile.scss
+.seller_profile {
+  margin-bottom: 90px;
+  .outer_profile {
+    
+    .left_profile {
+      border-radius: 16px;
+
+      .left_upper {
+        padding: 18px 16px;
+        display: flex;
+        background: #b2adf6;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+
+        .left_upper_img {
+          height: 56px;
+          width: 56px;
+          margin-right: 12px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .left_upper_info {
+          h3 {
+            padding-bottom: 8px;
+            font-family: "DM Sans", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+          }
+          p {
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .left_lower {
+        padding-left: 12px;
+        padding-right: 24px;
+        background: #f3f3f3;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+        ul {
+          li {
+            .phase,
+            .phase_l {
+              padding: 16px 10px 16px 25px;
+              display: flex;
+              cursor: pointer;
+
+              p {
+                font-family: "DM Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                transition: color 0.3s;
+              }
+
+              .icon {
+                height: 16px;
+                width: 16px;
+                position: relative;
+                padding-right: 20px;
+                top: -5px;
+                transition: color 0.3s;
+              }
+
+              &:hover {
+                background: -webkit-linear-gradient(
+                  90deg,
+                  #7e81e7 -12.81%,
+                  #0f40b2 100%
+                );
+
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                svg:hover {
+                  fill: red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right_profile {
+      border-radius: 16px;
+      padding: 32px;
+      background: #f3f3f3;
+      .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        height: 10px;
+        background-color: white;
+        &::placeholder {
+          color: black;
+          opacity: 50%;
+        }
+      }
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        background-color: white;
+        // height: 10px;
+        padding: 10px 12px;
+      }
+
+      .css-wb57ya-MuiFormControl-root-MuiTextField-root {
+        background-color: white;
+      }
+
+      .select_prop {
+        font-family: "DM Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+
+        h3 {
+          padding-bottom: 16px;
+        }
+        .prop_type {
+          padding: 16px;
+          margin-bottom: 40px;
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+              .prop_same {
+                background-color: white;
+                padding: 16px 20.5px;
+                border-radius: 8px;
+                width: 100px;
+                cursor: pointer;
+                transition: all 0.3s;
+                height: 150px;
+
+                &.selected {
+                  border: 2px solid blue;
+
+                  p {
+                    color: blue;
+                  }
+                }
+
+                .prop_image {
+                  height: 89px;
+                  width: 89px;
+                  padding-bottom: 12px;
+                  filter: grayscale(1);
+                  &:hover {
+                    filter: grayscale(0);
+                  }
+
+                  img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+
+                    &:hover {
+                      filter: hue-rotate(215deg);
+                    }
+                  }
+                }
+
+                p {
+                  font-family: "DM Sans", sans-serif;
+                  font-size: 18px;
+                  font-weight: 500;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .Other {
+        margin-bottom: 40px;
+        h3 {
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-weight: 800;
+          padding-bottom: 8px;
+        }
+      }
+
+      .property_adds {
+        margin-bottom: 40px;
+        .property {
+          h3 {
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 800;
+            padding-bottom: 8px;
+          }
+        }
+      }
+
+      .rooms {
+        margin-bottom: 40px;
+        .no_of_bed {
+          h3 {
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 800;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .description {
+        margin-bottom: 40px;
+        .detail_dis {
+          h3 {
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 800;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .rent_price {
+        margin-bottom: 40px;
+        .rent {
+          h3 {
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 800;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .role {
+        margin-bottom: 70px;
+        .ur_role {
+          h3 {
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-weight: 800;
+            padding-bottom: 8px;
+          }
+        }
+      }
+      .personal {
+        .personal_heading {
+          h3 {
+            font-family: DM Sans;
+            font-size: 20px;
+            font-weight: 800;
+            padding-bottom: 16px;
+          }
+        }
+        .personal_info {
+          h3 {
+            font-family: DM Sans;
+            font-size: 16px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}

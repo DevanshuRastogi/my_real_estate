@@ -16,6 +16,8 @@ const Home_4 = () => {
         <Grid container>
           <Grid item lg={12}>
             <div className="slider_parent">
+              <h2>See More Properties</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <Swiper
                 effect={"coverflow"}
                 grabCursor={true}

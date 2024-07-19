@@ -15,7 +15,7 @@ const Home_2 = () => {
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <div className="browser_properties">
               <Grid container>
-                <Grid item lg={5}>
+                <Grid item lg={5} md={5} sm={5} xs={5}>
                   <div className="properties_1">
                     <div className="properties_details">
                       <h3>

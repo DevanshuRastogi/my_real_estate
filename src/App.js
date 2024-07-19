@@ -11,6 +11,7 @@ import SingleBlog from './screens/singleblog';
 import axios from 'axios';
 import Contact from './screens/contact';
 import AboutUs from './screens/about';
+import Seller from './screens/seller';
 const singleBlogLoader = async ({ params }) => {
   const { id } = params;
   const response = await axios.get(`http://localhost:5000/blogs/${id}`);
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
   { path: '/blogpage', element: <Blogs /> },
   { path: '/about', element: <AboutUs/> },
   { path: '/contact', element: <Contact /> },
+  { path: '/seller', element: <Seller /> },
   {
     path: '/blogs/:id',
     element: <SingleBlog />,

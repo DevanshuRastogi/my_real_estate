@@ -118,7 +118,7 @@ const Login = () => {
                                 />
                               </div>
                               <div className="forgot_link">
-                                <NavLink to="/resetpass">
+                                <NavLink to="/changepass">
                                   Forgot Password
                                 </NavLink>
                               </div>

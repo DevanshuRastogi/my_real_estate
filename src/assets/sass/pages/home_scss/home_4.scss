@@ -2,10 +2,23 @@
   position: relative;
   padding: 0 2px;
   // background-color: red;
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 
+    text-align: center;
+  }
   .swiper {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 50px;
 
     .swiper-slide {
@@ -14,20 +27,20 @@
       height: 273px;
       width: 215px;
       transition: transform 0.3s;
-    top: 100px;
+      top: 100px;
 
       &.swiper-slide-next,
       &.swiper-slide-prev {
-         height: 365px;
+        height: 365px;
         width: 286px;
-        
-        top:42px;
+
+        top: 42px;
       }
 
       &.swiper-slide-active {
-       height: 443px;
+        height: 443px;
         width: 420px;
-        top:4px;
+        top: 4px;
       }
 
       img {
@@ -52,8 +65,6 @@
         background-color: #4a47a3;
       }
     }
-
-    
 
     .swiper-button-prev {
       left: -40px; // Adjust to position outside the container
