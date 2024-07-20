@@ -1,13 +1,6 @@
 // src/components/SellerProfile.js
 import React, { useState } from "react";
 import { Container, Grid } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import profile from "../assets/images/profile_pic.png";
-import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
-import MapsUgcRoundedIcon from "@mui/icons-material/MapsUgcRounded";
-import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import property1 from "../assets/images/select1.png";
 import property2 from "../assets/images/select2.png";
 import property4 from "../assets/images/select4.png";
@@ -15,6 +8,7 @@ import property5 from "../assets/images/select5.png";
 import TextField from "@mui/material/TextField";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
+import Dashboard from "./seller_dashboard";
 
 const propertyTypes = [
   { id: 1, name: "Modern Villa", img: property1 },
@@ -24,17 +18,12 @@ const propertyTypes = [
   { id: 5, name: "Other", img: property5 },
 ];
 
-const SellerProfile = () => {
-  const navigate = useNavigate();
+const SellerForm = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [role, setRole] = useState("owner");
   const [bedrooms, setBedrooms] = useState(1);
   const [bathrooms, setBathrooms] = useState(1);
   const [floors, setFloors] = useState(1);
-
-  const handleNavigation = (path) => {
-    navigate(path);
-  };
 
   const handlePropertySelect = (propertyId) => {
     setSelectedProperty(propertyId);
@@ -57,68 +46,14 @@ const SellerProfile = () => {
   };
 
   return (
-    <section className="seller_profile">
+    <section className="dashboard_section seller_main">
       <Container>
         <Grid container>
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <div className="outer_profile">
               <Grid container spacing={2}>
                 <Grid item lg={3} md={3} sm={3} xs={3}>
-                  <div className="left_profile">
-                    <div className="left_upper">
-                      <div className="left_upper_img">
-                        <img src={profile} alt="profile" />
-                      </div>
-                      <div className="left_upper_info">
-                        <h3>John Cooper</h3>
-                        <p>demo@example.com</p>
-                      </div>
-                    </div>
-                    <div className="left_lower">
-                      <ul>
-                        <li onClick={() => handleNavigation("/")}>
-                          <div className="phase">
-                            <div className="icon">
-                              <PermIdentityOutlinedIcon />
-                            </div>
-                            <p>My Account</p>
-                          </div>
-                        </li>
-                        <li onClick={() => handleNavigation("/changepass")}>
-                          <div className="phase">
-                            <div className="icon">
-                              <LockOutlinedIcon />
-                            </div>
-                            <p>Change Password</p>
-                          </div>
-                        </li>
-                        <li onClick={() => handleNavigation("/")}>
-                          <div className="phase">
-                            <div className="icon">
-                              <ApartmentOutlinedIcon />
-                            </div>
-                            <p>My Properties</p>
-                          </div>
-                        </li>
-                        <li onClick={() => handleNavigation("/")}>
-                          <div className="phase">
-                            <div className="icon">
-                              <MapsUgcRoundedIcon />
-                            </div>
-                            <p>Responses</p>
-                          </div>
-                        </li>
-                        <li onClick={() => handleNavigation("/")}>
-                          <div className="phase_l">
-                            <div className="icon">
-                              <LogoutRoundedIcon />
-                            </div>
-                            <p>Logout</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <Dashboard />
                 </Grid>
                 <Grid item lg={9} md={9} sm={9} xs={9}>
                   <div className="right_profile">
@@ -363,4 +298,4 @@ const SellerProfile = () => {
   );
 };
 
-export default SellerProfile;
+export default SellerForm;

@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Container, Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AddLocationAltOutlinedIcon from "@mui/icons-material/AddLocationAltOutlined";
-import SquareFootIcon from "../../assets/images/AreaHome1.png";
+import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import HotelOutlinedIcon from "@mui/icons-material/HotelOutlined";
 import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
 

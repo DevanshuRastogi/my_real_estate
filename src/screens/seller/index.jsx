@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../../component/header'
 import Footer from '../../component/footer'
-import SellerProfile from '../../component/sellerprofile'
+import SellerForm from '../../component/sellerform'
 
 const Seller = () => {
   return (
     <div>
       <Header />
 
-        <SellerProfile />
+        <SellerForm />
 
         <Footer />
     </div>
