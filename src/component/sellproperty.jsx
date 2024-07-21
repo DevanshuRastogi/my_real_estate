@@ -1,13 +1,9 @@
-// src/components/SellerProfile.js
 import React, { useState } from "react";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, TextField, Select, MenuItem, Typography, Box } from "@mui/material";
 import property1 from "../assets/images/select1.png";
 import property2 from "../assets/images/select2.png";
 import property4 from "../assets/images/select4.png";
 import property5 from "../assets/images/select5.png";
-import TextField from "@mui/material/TextField";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
 import Dashboard from "./seller_dashboard";
 
 const propertyTypes = [
@@ -18,12 +14,16 @@ const propertyTypes = [
   { id: 5, name: "Other", img: property5 },
 ];
 
-const SellerForm = () => {
+const SellProperty = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [role, setRole] = useState("owner");
   const [bedrooms, setBedrooms] = useState(1);
   const [bathrooms, setBathrooms] = useState(1);
   const [floors, setFloors] = useState(1);
+  const [rent, setRent] = useState("");
+  const [price, setPrice] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
+  const [errors, setErrors] = useState({ rent: false, price: false, contactNumber: false });
 
   const handlePropertySelect = (propertyId) => {
     setSelectedProperty(propertyId);
@@ -43,6 +43,24 @@ const SellerForm = () => {
 
   const handleFloorsChange = (event) => {
     setFloors(event.target.value);
+  };
+
+  const handleRentChange = (event) => {
+    const value = event.target.value;
+    setRent(value);
+    setErrors({ ...errors, rent: isNaN(value) || value < 0 });
+  };
+
+  const handlePriceChange = (event) => {
+    const value = event.target.value;
+    setPrice(value);
+    setErrors({ ...errors, price: isNaN(value) || value < 0 });
+  };
+
+  const handleContactNumberChange = (event) => {
+    const value = event.target.value;
+    setContactNumber(value);
+    setErrors({ ...errors, contactNumber: isNaN(value) || value < 0 });
   };
 
   return (
@@ -67,19 +85,12 @@ const SellerForm = () => {
                                 <li key={property.id}>
                                   <div
                                     className={`prop_same ${
-                                      selectedProperty === property.id
-                                        ? "selected"
-                                        : ""
+                                      selectedProperty === property.id ? "selected" : ""
                                     }`}
-                                    onClick={() =>
-                                      handlePropertySelect(property.id)
-                                    }
+                                    onClick={() => handlePropertySelect(property.id)}
                                   >
                                     <div className="prop_image">
-                                      <img
-                                        src={property.img}
-                                        alt={property.name}
-                                      />
+                                      <img src={property.img} alt={property.name} />
                                     </div>
                                     <p>{property.name}</p>
                                   </div>
@@ -177,7 +188,7 @@ const SellerForm = () => {
                               <MenuItem value={3}>3</MenuItem>
                               <MenuItem value={4}>4</MenuItem>
                               <MenuItem value={5}>5</MenuItem>
-                              <MenuItem value={6}>6 </MenuItem>
+                              <MenuItem value={6}>6</MenuItem>
                             </Select>
                           </div>
                         </Grid>
@@ -205,23 +216,49 @@ const SellerForm = () => {
                         <Grid item lg={6} md={6}>
                           <div className="rent">
                             <h3>Rent & Deposit</h3>
-                            <TextField
-                              required
-                              id="outlined-required"
-                              placeholder="Enter here"
-                              fullWidth
-                            />
+                            <Box position="relative">
+                              <TextField
+                                required
+                                id="rent"
+                                placeholder="Enter here"
+                                fullWidth
+                                value={rent}
+                                onChange={handleRentChange}
+                              />
+                              {errors.rent && (
+                                <Typography
+                                  color="error"
+                                  variant="caption"
+                                  style={{ position: "absolute", bottom: "-20px", left: 0 }}
+                                >
+                                  Invalid number
+                                </Typography>
+                              )}
+                            </Box>
                           </div>
                         </Grid>
                         <Grid item lg={6} md={6}>
                           <div className="rent">
                             <h3>Price</h3>
-                            <TextField
-                              required
-                              id="outlined-required"
-                              placeholder="Enter here"
-                              fullWidth
-                            />
+                            <Box position="relative">
+                              <TextField
+                                required
+                                id="price"
+                                placeholder="Enter here"
+                                fullWidth
+                                value={price}
+                                onChange={handlePriceChange}
+                              />
+                              {errors.price && (
+                                <Typography
+                                  color="error"
+                                  variant="caption"
+                                  style={{ position: "absolute", bottom: "-20px", left: 0 }}
+                                >
+                                  Invalid number
+                                </Typography>
+                              )}
+                            </Box>
                           </div>
                         </Grid>
                       </Grid>
@@ -230,26 +267,25 @@ const SellerForm = () => {
                       <Grid container spacing={2}>
                         <Grid item lg={6}>
                           <div className="ur_role">
-                          <h3>Role</h3>
-                          <Select
-                            fullWidth
-                            labelId="role-select-label"
-                            id="role-select"
-                            value={role}
-                            onChange={handleRoleChange}
-                          >
-                            <MenuItem value={"owner"}>Owner</MenuItem>
-                            <MenuItem value={"agent"}>Agent</MenuItem>
-                          </Select>
+                            <h3>Role</h3>
+                            <Select
+                              fullWidth
+                              labelId="role-select-label"
+                              id="role-select"
+                              value={role}
+                              onChange={handleRoleChange}
+                            >
+                              <MenuItem value={"owner"}>Owner</MenuItem>
+                              <MenuItem value={"agent"}>Agent</MenuItem>
+                            </Select>
                           </div>
-                         
                         </Grid>
                         <Grid item lg={6}>
                           <div className="ur_role">
                             <h3>Availability</h3>
-                          <TextField
+                            <TextField
                               required
-                              id="outlined-required"
+                              id="availability"
                               placeholder="Enter here"
                               fullWidth
                             />
@@ -259,17 +295,16 @@ const SellerForm = () => {
                     </div>
                     <div className="personal">
                       <div className="personal_heading">
-                      <h3>Personal Information</h3>
+                        <h3>Personal Information</h3>
                       </div>
-                     
                       <Grid container spacing={2}>
                         <Grid item lg={6}>
                           <div className="person_info">
                             <h3>Name</h3>
                             <TextField
                               required
-                              id="outlined-required"
-                              placeholder="Eg.John Copper"
+                              id="name"
+                              placeholder="Eg. John Copper"
                               fullWidth
                             />
                           </div>
@@ -277,12 +312,25 @@ const SellerForm = () => {
                         <Grid item lg={6}>
                           <div className="person_info">
                             <h3>Contact Number</h3>
-                            <TextField
-                              required
-                              id="outlined-required"
-                              placeholder="+636 *** ***"
-                              fullWidth
-                            />
+                            <Box position="relative">
+                              <TextField
+                                required
+                                id="contact-number"
+                                placeholder="+636 *** ***"
+                                fullWidth
+                                value={contactNumber}
+                                onChange={handleContactNumberChange}
+                              />
+                              {errors.contactNumber && (
+                                <Typography
+                                  color="error"
+                                  variant="caption"
+                                  style={{ position: "absolute", bottom: "-20px", left: 0 }}
+                                >
+                                  Invalid number
+                                </Typography>
+                              )}
+                            </Box>
                           </div>
                         </Grid>
                       </Grid>
@@ -298,4 +346,4 @@ const SellerForm = () => {
   );
 };
 
-export default SellerForm;
+export default SellProperty;

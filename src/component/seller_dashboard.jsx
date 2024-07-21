@@ -24,7 +24,7 @@ const Dashboard = () => {
         </div>
         <div className="left_lower">
           <ul>
-            <li onClick={() => handleNavigation("/")}>
+            <li onClick={() => handleNavigation("/selleraccount")}>
               <div className="phase">
                 <div className="icon">
                   <PermIdentityOutlinedIcon />
@@ -32,7 +32,7 @@ const Dashboard = () => {
                 <p>My Account</p>
               </div>
             </li>
-            <li onClick={() => handleNavigation("/changepass")}>
+            <li onClick={() => handleNavigation("/sellerpassword")}>
               <div className="phase">
                 <div className="icon">
                   <LockOutlinedIcon />

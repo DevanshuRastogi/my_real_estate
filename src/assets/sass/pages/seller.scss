@@ -1,86 +1,88 @@
 .dashboard_section {
   margin-bottom: 90px;
-  .sidebar {
-    border-radius: 16px;
+  .outer_profile {
+    .sidebar {
+      border-radius: 16px;
 
-    .left_upper {
-      padding: 18px 16px;
-      display: flex;
-      background: #b2adf6;
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
+      .left_upper {
+        padding: 18px 16px;
+        display: flex;
+        background: #b2adf6;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
 
-      .left_upper_img {
-        height: 56px;
-        width: 56px;
-        margin-right: 12px;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
+        .left_upper_img {
+          height: 56px;
+          width: 56px;
+          margin-right: 12px;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .left_upper_info {
+          h3 {
+            padding-bottom: 8px;
+            font-family: "DM Sans", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+          }
+          p {
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+          }
         }
       }
 
-      .left_upper_info {
-        h3 {
-          padding-bottom: 8px;
-          font-family: "DM Sans", sans-serif;
-          font-size: 24px;
-          font-weight: 700;
-          color: #ffffff;
-        }
-        p {
-          font-family: "DM Sans", sans-serif;
-          font-size: 16px;
-          font-weight: 500;
-          color: #ffffff;
-        }
-      }
-    }
+      .left_lower {
+        padding-left: 12px;
+        padding-right: 24px;
+        background: #f3f3f3;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
 
-    .left_lower {
-      padding-left: 12px;
-      padding-right: 24px;
-      background: #f3f3f3;
-      border-bottom-left-radius: 16px;
-      border-bottom-right-radius: 16px;
+        ul {
+          li {
+            .phase,
+            .phase_l {
+              padding: 16px 10px 16px 25px;
+              display: flex;
+              cursor: pointer;
 
-      ul {
-        li {
-          .phase,
-          .phase_l {
-            padding: 16px 10px 16px 25px;
-            display: flex;
-            cursor: pointer;
+              p {
+                font-family: "DM Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                transition: color 0.3s;
+              }
 
-            p {
-              font-family: "DM Sans", sans-serif;
-              font-size: 16px;
-              font-weight: 400;
-              transition: color 0.3s;
-            }
+              .icon {
+                height: 16px;
+                width: 16px;
+                position: relative;
+                padding-right: 20px;
+                top: -5px;
+                transition: color 0.3s;
+              }
 
-            .icon {
-              height: 16px;
-              width: 16px;
-              position: relative;
-              padding-right: 20px;
-              top: -5px;
-              transition: color 0.3s;
-            }
+              &:hover {
+                background: -webkit-linear-gradient(
+                  90deg,
+                  #7e81e7 -12.81%,
+                  #0f40b2 100%
+                );
 
-            &:hover {
-              background: -webkit-linear-gradient(
-                90deg,
-                #7e81e7 -12.81%,
-                #0f40b2 100%
-              );
-
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              svg:hover {
-                fill: red;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                svg:hover {
+                  fill: red;
+                }
               }
             }
           }
@@ -88,7 +90,9 @@
       }
     }
   }
+
   &.seller_main {
+    margin-bottom: 90px;
     .right_profile {
       border-radius: 16px;
       padding: 32px;
@@ -257,6 +261,300 @@
             font-size: 16px;
             font-weight: 800;
           }
+        }
+      }
+    }
+  }
+
+  &.account_main {
+    .left_detail {
+      padding-left: 60px;
+      padding-top: 30px;
+      background: #f3f3f3;
+      height: 100%;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+
+      .edit_button {
+        margin-bottom: 50px;
+        .MuiButtonBase-root {
+          .btn {
+            // width: 106px;
+            // height: 44px;
+            // font-family: Inter;
+            // font-size: 16px;
+            // font-weight: 700;
+            // text-align: center;
+
+            // position: relative;
+            // padding: 10px;
+            // box-sizing: border-box;
+            // $border: 3px;
+            // color: red;
+            // background: white;
+            // background-clip: padding-box; /* !importanté */
+            // border: solid $border transparent; /* !importanté */
+            // border-radius: 1em;
+
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+
+            $border: 5px;
+            color: red;
+            background: white;
+            background-clip: padding-box; /* !importanté */
+            border: solid $border transparent; /* !importanté */
+            border-radius: 1em;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              z-index: -1;
+              margin: -$border; /* !importanté */
+              border-radius: inherit; /* !importanté */
+
+              border: 3px solid;
+
+              background: linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%);
+            }
+          }
+        }
+
+        // .btn {
+        //   &.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+        //     width: 106px;
+        //     height: 44px;
+        //     font-family: Inter;
+        //     font-size: 16px;
+        //     font-weight: 700;
+        //     text-align: center;
+
+        //     position: relative;
+        //     padding: 10px;
+        //     box-sizing: border-box;
+        //     $border: 5px;
+        //     color: red;
+        //     background: white;
+        //     background-clip: padding-box; /* !importanté */
+        //     border: solid $border transparent; /* !importanté */
+        //     border-radius: 1em;
+
+        //     &:before {
+        //       content: "";
+        //       position: absolute;
+        //       top: 0;
+        //       right: 0;
+        //       bottom: 0;
+        //       left: 0;
+        //       z-index: -1;
+        //       margin: -$border; /* !importanté */
+        //       border-radius: inherit; /* !importanté */
+
+        //       // border: 1.5px solid;
+
+        //       background: linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%);
+        //     }
+        //   }
+        // }
+      }
+
+      .left_detail_img {
+        height: 160px;
+        width: 160px;
+        margin-bottom: 50px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .left_all_details {
+        margin-bottom: 80px;
+        .left_details {
+          .left_main {
+            padding-bottom: 20px;
+            h3 {
+              font-family: DM Sans;
+              font-size: 16px;
+              font-weight: 900;
+              padding-bottom: 8px;
+            }
+
+            p {
+              font-family: DM Sans;
+              font-size: 16px;
+              font-weight: 400;
+              color: #00000080;
+              opacity: 80%;
+            }
+          }
+        }
+        .right_details {
+          .right_main {
+            padding-bottom: 20px;
+            h3 {
+              font-family: DM Sans;
+              font-size: 16px;
+              font-weight: 900;
+              padding-bottom: 8px;
+            }
+
+            p {
+              font-family: DM Sans;
+              font-size: 16px;
+              font-weight: 400;
+              color: #00000080;
+              opacity: 80%;
+            }
+          }
+        }
+      }
+    }
+    .right_detail {
+      padding: 30px 27px 0px 60px;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+      background: linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%);
+      height: 100%;
+      h2 {
+        font-family: Rozha One;
+        font-size: 40px;
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+
+  &.seller_edit {
+    .edit_all {
+      .css-1ualgfl-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+        height: 40px;
+        background: white;
+      }
+      h3 {
+        font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 900;
+        padding-bottom: 8px;
+      }
+      .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+        height: 40px;
+        background-color: white;
+      }
+      .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+      }
+      .css-sghohy-MuiButtonBase-root-MuiButton-root {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+      }
+      .css-wb57ya-MuiFormControl-root-MuiTextField-root {
+        background-color: white;
+       
+      }
+      .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+        height: 40px;
+      }
+      .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+
+        background-color: white;
+        height: 40px;
+      }
+    }
+   
+    
+
+    .edit_margin {
+      margin-bottom: 30px;
+    }
+
+    .edit_profile {
+      .edit_password {
+        margin-bottom: 65px;
+      }
+      background: #f3f3f3;
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+      .edit_profile_button {
+        display: flex;
+        .button_1 {
+          margin-right: 16px;
+        }
+      }
+
+      h2 {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        font-family: Rozha One;
+        font-size: 38px;
+        font-weight: 400;
+      }
+      .edit_profile_img {
+        height: 160px;
+        width: 160px;
+        margin-bottom: 50px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &.seller_pass {
+    .seller_password {
+      padding: 30px 0px 0px 40px;
+      background: #f3f3f3;
+      border-radius: 16px;
+      .change_pass {
+        margin-bottom: 50px;
+        width: 540px;
+        h1 {
+          font-family: Rozha One;
+          font-size: 40px;
+          font-weight: 400;
+          padding-bottom: 8px;
+        }
+        p {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          color: #4d5e80;
+          padding-bottom: 56px;
+        }
+        .old_pass {
+          margin-bottom: 24px;
+        }
+        .confirm_pass{
+          margin-bottom: 50px;
+        }
+      }
+
+      .change_pass_image {
+        height: 258px;
+        width: 258px;
+        position: relative;
+        top: 133px;
+        right: 59px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
         }
       }
     }

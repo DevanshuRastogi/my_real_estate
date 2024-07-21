@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import "./App.scss";
+import './App.scss';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import Login from './screens/auth/login';
 import HomePage from './screens/homepage';
@@ -13,8 +13,12 @@ import BuyPage from './screens/buy';
 import SingleProp from './screens/singleprop';
 import Contact from './screens/contact';
 import AboutUs from './screens/about';
-import Seller from './screens/seller';
+import Seller from './screens/seller/sellproperty';
 import axios from 'axios';
+import SellerAccount from './screens/seller/selleraccount';
+import SellerEditProfile from './screens/seller/sellereditprofile';
+import SellerPass from './screens/seller/sellerpassword';
+import { UserProvider } from './component/userdata';
 
 const singleBlogLoader = async ({ params }) => {
   const { id } = params;
@@ -63,7 +67,10 @@ const router = createBrowserRouter([
   { path: '/about', element: <AboutUs /> },
   { path: '/contact', element: <Contact /> },
   { path: '/seller', element: <Seller /> },
+  { path: '/selleraccount', element: <SellerAccount /> },
   { path: '/buy', element: <BuyPage /> },
+  { path: '/sellerprofile', element: <SellerEditProfile /> },
+  { path: '/sellerpassword', element: <SellerPass /> },
   {
     path: '/blogs/:id',
     element: <SingleBlog />,
@@ -81,10 +88,12 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
+    <UserProvider>
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </UserProvider>
   );
 }
 
-export default App; 
+export default App;
