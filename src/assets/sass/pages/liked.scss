@@ -1,72 +1,7 @@
 .prop_sec {
   //   border: 1px solid red;
-  // margin-bottom: 50px;
-  .card_and_filter {
-    // border: 1px solid red;
-    // padding: 0px 30px;
-    // background: white;
-
-    .filter_area {
-      //   border: 1px solid black;
-      padding: 32px;
-      padding-bottom: 0;
-      height: 100%;
-      border-radius: 20px;
-      background-color: rgba(0, 0, 0, 0.058);
-      overflow: hidden;
-      .filter_section {
-        h3 {
-          font-family: "DM Sans";
-          font-size: 18px;
-          font-weight: 500;
-          color: #000000;
-        }
-        h5 {
-          font-family: "DM Sans";
-          font-size: 16px;
-          font-weight: 500;
-          opacity: 50%;
-        }
-
-        .country_selector {
-          padding-top: 30px;
-          .cs_select {
-            margin-top: 16px;
-          }
-        }
-        .place_picker {
-          padding-top: 42px;
-
-          .check_1 {
-            padding-top: 16px;
-            display: grid;
-            grid-template-columns: repeat(2, 113px);
-            grid-template-rows: repeat(3, auto);
-            column-gap: 25px;
-            // justify-content: space-between;
-          }
-        }
-
-        .price_range {
-          padding-top: 43px;
-          .pr_slide {
-            padding-top: 28px;
-          }
-        }
-        .size_scale {
-          padding-top: 42px;
-          .size_txt {
-            margin-top: 15px;
-            display: flex;
-            justify-content: space-between;
-            gap:50px;
-          }
-        }
-
-        //
-      }
-    }
-
+  margin-bottom: 50px;
+ 
     .prop_counter {
       padding: 8px 5px;
       display: flex;
@@ -80,23 +15,22 @@
     }
     .propCards {
       display: grid;
-      margin-left: 20px;
       //   border: 1px solid blue;
       overflow: hidden;
-      grid-template-columns: repeat(3, 270px);
-      // justify-content: space-between;
+      grid-template-columns: repeat(3, 260px);
+      justify-content: space-between;
       // gap: 45px;
       row-gap: 15px;
 
       .prop_card {
-        background-color:#fff;
-        // border-radius: 10px;
+        background-color: rgba(194, 194, 194, 0.136);
+        border-radius: 10px;
 
         overflow: hidden;
         .card_image {
           width: 280px;
           height: 180px;
-          // overflow: hidden;
+          overflow: hidden;
           position: relative;
           img {
             width: 100%;
@@ -164,4 +98,3 @@
       }
     }
   }
-}

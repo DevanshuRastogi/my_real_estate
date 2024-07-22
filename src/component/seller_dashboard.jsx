@@ -40,7 +40,7 @@ const Dashboard = () => {
                 <p>Change Password</p>
               </div>
             </li>
-            <li onClick={() => handleNavigation("/")}>
+            <li onClick={() => handleNavigation("/liked")}>
               <div className="phase">
                 <div className="icon">
                   <ApartmentOutlinedIcon />

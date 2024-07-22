@@ -13,7 +13,7 @@ import {
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Filter = () => {
-  const [location, setLocation] = useState("Scotland");
+  const [location, setLocation] = useState(1);
   const [placeTypes, setPlaceTypes] = useState(["All"]);
   const [priceRange, setPriceRange] = useState([100, 10000]);
   const [size, setSize] = useState({ min: "", max: "" });
@@ -52,11 +52,13 @@ const Filter = () => {
   return (
     <>
       <div className="filter_section">
-        <h5>Filter</h5>
+
+        <h3>Filter</h3>
 
         <div className="country_selector">
           <h5>Location</h5>
           <Select
+          className="cs_select"
             fullWidth
             value={location}
             onChange={(e) => setLocation(e.target.value)}
@@ -72,21 +74,23 @@ const Filter = () => {
         </div>
         <div className="place_picker">
           <h5>Types of Places</h5>
-          {["All", "Office", "Building", "Shop", "Apartment", "House"].map(
-            (type) => (
-              <FormControlLabel
-                key={type}
-                control={
-                  <Checkbox
-                    checked={placeTypes.includes(type)}
-                    onChange={() => handlePlaceTypeChange(type)}
-                    color="primary"
-                  />
-                }
-                label={type}
-              />
-            )
-          )}
+          <div className="check_1">
+            {["All", "Office", "Building", "Shop", "Apartment", "House"].map(
+              (type) => (
+                <FormControlLabel
+                  key={type}
+                  control={
+                    <Checkbox
+                      checked={placeTypes.includes(type)}
+                      onChange={() => handlePlaceTypeChange(type)}
+                      color="primary"
+                    />
+                  }
+                  label={type}
+                />
+              )
+            )}
+          </div>
         </div>
 
         <div className="price_range">
@@ -94,6 +98,7 @@ const Filter = () => {
 
           <Slider
             value={priceRange}
+            className="pr_slide"
             onChange={(_, newValue) => setPriceRange(newValue)}
             valueLabelDisplay="auto"
             min={100}
@@ -107,9 +112,10 @@ const Filter = () => {
 
         <div className="size_scale">
           <h5>Size</h5>
-          <Box display="flex" justifyContent="space-between">
+          <div className="size_txt">
             <TextField
-              label="Min"
+            
+              placeholder="Min"
               value={size.min}
               onChange={(e) => setSize({ ...size, min: e.target.value })}
               variant="outlined"
@@ -117,17 +123,17 @@ const Filter = () => {
               sx={{ width: "45%" }}
             />
             <TextField
-              label="Max"
+              placeholder="Max"
               value={size.max}
               onChange={(e) => setSize({ ...size, max: e.target.value })}
               variant="outlined"
               size="small"
               sx={{ width: "45%" }}
             />
-          </Box>
           </div>
+        </div>
 
-       <div className="feature_selector">
+        <div className="feature_selector ">
           <h5>Feature</h5>
           {[
             "Ac & Heating",
@@ -153,9 +159,9 @@ const Filter = () => {
           ))}
         </div>
 
-       <div className="style_selector">
-        <h5>Style</h5>
-     
+        <div className="style_selector">
+          <h5>Style</h5>
+
           {["A-Frame", "Cottage", "Dome", "Spanish"].map((style) => (
             <FormControlLabel
               key={style}
@@ -169,7 +175,7 @@ const Filter = () => {
               label={style}
             />
           ))}
-            </div>
+        </div>
       </div>
     </>
   );

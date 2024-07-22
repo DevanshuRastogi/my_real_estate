@@ -6,12 +6,12 @@ import Header from "../../component/header";
 import Footer from "../../component/footer";
 import Home_3 from "../../component/home_comp/home_3";
 // import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import Location from "../../assets/images/location.png"
-import Area from "../../assets/images/area.png"
-import BathroomIco from "../../assets/images/bathroom.png"
-import BedroomIco from "../../assets/images/bedroom.png"
-import CallIco from "../../assets/images/Phone.png"
-import EmailIco from "../../assets/images/Mail.png"
+import Location from "../../assets/images/location.png";
+import Area from "../../assets/images/area.png";
+import BathroomIco from "../../assets/images/bathroom.png";
+import BedroomIco from "../../assets/images/bedroom.png";
+import CallIco from "../../assets/images/Phone.png";
+import EmailIco from "../../assets/images/Mail.png";
 
 const SingleProp = () => {
   const data = useLoaderData();
@@ -72,8 +72,12 @@ const SingleProp = () => {
                             <h3 className="price">{Price} Lakhs</h3>
                           </div>
                           <div className="addrs">
-                          <div className="location_ico"> <img src={Location} alt="" /></div>  {property_address.street},{" "}
-                            {property_address.city}, {property_address.Country},{" "}
+                            <div className="location_ico">
+                              {" "}
+                              <img src={Location} alt="" />
+                            </div>{" "}
+                            {property_address.street}, {property_address.city},{" "}
+                            {property_address.Country},{" "}
                             {property_address.pincode}
                           </div>
                         </div>
@@ -83,7 +87,7 @@ const SingleProp = () => {
                           </p>
                           <h5>Description</h5>
                           <p className="full_description">
-                            {Description.substring(0, 445)}
+                            {Description.substring(0, 281)}......
                           </p>
                           <Link>
                             <div className="link_content">Read More</div>{" "}
@@ -92,20 +96,38 @@ const SingleProp = () => {
                             <ul>
                               <li>
                                 <div className="content_under_icon">
-                                  <p><div className="common_ico"> <img src={Area} alt="" /></div> Area </p>
+                                  <div className="common_ico_main">
+                                    <div className="common_ico">
+                                      <img src={Area} alt="" />
+                                    </div>
+                                    <div className="label">Area </div>
+                                  </div>
                                   <h5>{area} sq. ft</h5>
+                                  {/* <p><div className="common_ico"> <img src={Area} alt="" /></div> Area </p> */}
                                 </div>
                               </li>
                               <li>
                                 <div className="content_under_icon">
-                                  <p><div className="common_ico"> <img src={BedroomIco} alt="" /></div> Bedroom</p>
-                                  <h5>{Bedroom}</h5>
+                                  <div className="common_ico_main">
+                                    <div className="common_ico">
+                                      <img src={BedroomIco} alt="" />
+                                    </div>
+                                    <div className="label">Area </div>
+                                  </div>
+                                  <h5>{Bedroom} sq. ft</h5>
+                                  {/* <p><div className="common_ico"> <img src={Area} alt="" /></div> Area </p> */}
                                 </div>
                               </li>
                               <li>
                                 <div className="content_under_icon">
-                                  <p><div className="common_ico"> <img src={BathroomIco} alt="" /></div> Bathroom</p>
-                                  <h5>{Bathroom}</h5>
+                                  <div className="common_ico_main">
+                                    <div className="common_ico">
+                                      <img src={BathroomIco} alt="" />
+                                    </div>
+                                    <div className="label">Area </div>
+                                  </div>
+                                  <h5>{Bathroom} sq. ft</h5>
+                                  {/* <p><div className="common_ico"> <img src={Area} alt="" /></div> Area </p> */}
                                 </div>
                               </li>
                             </ul>
@@ -119,31 +141,42 @@ const SingleProp = () => {
                           <p>{agent_name}</p>
                         </p>
                         <p className="agn_addrs">
-                          <h6>Address : </h6> 
+                          <h6>Address : </h6>
                           <p>{agent_address}</p>
                         </p>
 
                         <div className="agent_phn_email">
                           <div className="call">
                             <p>
-                              <h6><div className="call_mail_ico"> <img src={CallIco} alt="" /></div>Call: </h6>
+                              <h6>
+                                <div className="call_mail_ico">
+                                  {" "}
+                                  <img src={CallIco} alt="" />
+                                </div>
+                                Call:{" "}
+                              </h6>
                               <p>{agent_call}</p>
                             </p>
                           </div>
                           <div className="email">
                             <p>
-                              <h6> <div className="call_mail_ico"> <img src={EmailIco} alt="" /></div>Email : </h6>
+                              <h6>
+                                {" "}
+                                <div className="call_mail_ico">
+                                  {" "}
+                                  <img src={EmailIco} alt="" />
+                                </div>
+                                Email :{" "}
+                              </h6>
                               <p>{agent_email}</p>
                             </p>
                           </div>
                         </div>
-
-
                       </div>
 
                       <div className="get_in_touch">
-                              <Button variant="contained">Get in Touch</Button>
-                            </div>
+                        <Button variant="contained">Get in Touch</Button>
+                      </div>
                     </div>
                   </Grid>
                 </Grid>
@@ -152,8 +185,18 @@ const SingleProp = () => {
           </Grid>
         </Container>
         <div className="home_3_comp">
-      <Home_3 displayCount={3} />
-
+          <Container>
+            <Grid container>
+              <Grid item lg={12} md={12} sm={12} xs={12}>
+                <div className="h3_div">
+                  <h3>Explore other properties</h3>
+                </div>
+              </Grid>
+            </Grid>
+          </Container>
+          <div className="home3">
+            <Home_3 displayCount={3} feature={false} />
+          </div>
         </div>
       </section>
       <Footer />

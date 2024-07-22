@@ -23,7 +23,7 @@ import { UserProvider } from './component/userdata';
 const singleBlogLoader = async ({ params }) => {
   const { id } = params;
   try {
-    const response = await axios.get(`http://localhost:5000/blogs`);
+    const response = await axios.get(`http://localhost:5001/blogs`);
     const allBlogs = response.data;
     
     const blog = allBlogs.find(blog => blog.id === parseInt(id));
@@ -95,5 +95,4 @@ function App() {
     </UserProvider>
   );
 }
-
 export default App;

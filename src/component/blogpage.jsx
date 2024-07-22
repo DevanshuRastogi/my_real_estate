@@ -11,7 +11,7 @@ const Blogpage = () => {
   useEffect(() => {
     async function fetchBlogs() {
       let url =
-        "http://localhost:5000/blogs?page=${currentPage}&limit=${pageSize}";
+        "http://localhost:5001/blogs?page=${currentPage}&limit=${pageSize}";
       const response = await fetch(url);
       const data = await response.json();
       setBlogs(data);

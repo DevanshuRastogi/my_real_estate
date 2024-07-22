@@ -3,7 +3,7 @@
     .image_all {
       .big_img {
         width: 100%;
-        height: 540px;
+        height: 450px;
         border-radius: 10px;
         overflow: hidden;
         img {
@@ -14,7 +14,7 @@
       }
       .small1_img {
         width: 100%;
-        height: 260px;
+        height: 220px;
         border-radius: 10px;
         overflow: hidden;
         img {
@@ -25,7 +25,7 @@
       }
       .small2_img {
         width: 100%;
-        height: 260px;
+        height: 220px;
         border-radius: 10px;
         overflow: hidden;
         img {
@@ -66,13 +66,13 @@
             letter-spacing: 0.03em;
             color: black;
             display: inline-block;
-            .location_ico{
+            .location_ico {
               display: inline-block;
               position: relative;
               bottom: -3px;
               width: 20px;
               height: 21px;
-              img{
+              img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -113,10 +113,55 @@
             ul {
               display: flex;
               justify-content: start;
-              gap: 20px;
+              gap: 25px;
               align-items: center;
-              .content_under_icon {
-                // border: 1px solid red;
+              li {
+                position: relative;
+                padding-right: 20px;
+                &::after {
+                  content: "|";
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  margin-top: 20px;
+                  font-size: 22px;
+                  color: black;
+                  opacity: 20%;
+                  // border-right: 1px solid black;
+                }
+                &:last-child {
+                  &::after {
+                    display: none;
+                  }
+                }
+                .content_under_icon {
+                  .common_ico_main {
+                    padding-right: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .common_ico {
+                      display: inline-block;
+                      position: relative;
+                      bottom: -3px;
+                      width: 25px;
+                      height: 25px;
+                      img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        opacity: 0.5;
+                      }
+                    }
+                    .label {
+                      font-family: "DM Sans";
+                      opacity: 40%;
+                      font-size: 16px;
+                      font-weight: 400;
+                      color: black;
+                    }
+                  }
+                }
 
                 // padding-right: 20px;
                 h5 {
@@ -126,25 +171,6 @@
                   font-weight: 400;
                   text-align: center;
                 }
-                p {
-                  font-family: "DM Sans";
-                  opacity: 40%;
-                  font-size: 14px;
-                  font-weight: 400;
-                  color: black;
-                  .common_ico{
-                    display: inline-block;
-                    position: relative;
-                    bottom: -3px;
-                    width: 25px;
-                    height: 25px;
-                    img{
-                      height: 100%;
-                      width: 100%;
-                      object-fit: cover;
-                    }
-                }
-                }
               }
             }
           }
@@ -152,7 +178,7 @@
       }
 
       .agentdetail {
-        padding-top: 56px;
+        padding-top: 40px;
         h5 {
           font-family: "DM Sans";
           font-size: 14px;
@@ -201,19 +227,18 @@
           padding: 8px 16px 8px 20px;
           border: 2px solid rgba(235, 235, 235, 1);
           border-radius: 8px;
-          .call_mail_ico{
+          .call_mail_ico {
             display: inline-block;
-                position: relative;
-                bottom: -3px;
-                width: 19px;
-                height: 20px;
-                padding-right: 5px;
-                img{
-                  height: 100%;
-                  width: 100%;
-                  object-fit: contain;
-                }
-            
+            position: relative;
+            bottom: -3px;
+            width: 19px;
+            height: 20px;
+            padding-right: 5px;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
           }
           .call {
             h6 {
@@ -241,7 +266,6 @@
               font-weight: 400;
               letter-spacing: 0.03em;
               color: rgba(0, 0, 0, 0.8);
-              
             }
             p {
               display: inline-block;
@@ -252,21 +276,30 @@
           }
         }
       }
-      .get_in_touch{
+      .get_in_touch {
         padding-top: 60px;
-        Button{
-        width: 100%;
-        background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
-      
-        font-size: 16px;
-        font-weight: 700;
-       
-        text-align: center;
-        
-      }}
+        Button {
+          width: 100%;
+          background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
+
+          font-size: 16px;
+          font-weight: 700;
+
+          text-align: center;
+        }
+      }
     }
   }
   .home_3_comp {
     margin: 90px 0;
+  }
+  .home_3_comp {
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .home3 {
+      padding-top: 56px;
+    }
   }
 }

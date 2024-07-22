@@ -13,7 +13,7 @@ const HomePage=()=>{
             <Header />
             <Home1 />
             <Home2 />
-            <Home3 />
+            <Home3 feature={true} />
             <Home4 />
             <Home5 />
             <Footer />

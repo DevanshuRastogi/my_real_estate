@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropCard from "./propcard";
+
 import Filter from "./filter";
 
 import { Container, Grid } from "@mui/material";
@@ -24,8 +25,9 @@ const PropPage = () => {
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <div>
               <div className="card_and_filter">
-                <Grid container spacing={2}>
+                <Grid container >
                   <Grid item lg={3} md={3} sm={3} xs={3}>
+                  
                     <div className="filter_area">
                       <Filter />
                       </div>
