@@ -20,6 +20,8 @@ import SellerAccount from './screens/seller/selleraccount';
 import SellerEditProfile from './screens/seller/sellereditprofile';
 import SellerPass from './screens/seller/sellerpassword';
 import { UserProvider } from './component/userdata';
+import BuyerDetails from './screens/buy/buydetails';
+import BuyerS from './screens/buy/buysubmit';
 import Response from './screens/response';
 import Terms from './screens/terms';
 import PrivacyPage from './screens/privacypolicy';
@@ -32,13 +34,13 @@ const singleBlogLoader = async ({ params }) => {
   try {
     const response = await axios.get(`http://localhost:5001/blogs`);
     const allBlogs = response.data;
-    
+
     const blog = allBlogs.find(blog => blog.id === parseInt(id));
-    
+
     if (!blog) {
       throw new Error('Blog not found');
     }
-    
+
     return blog;
   } catch (error) {
     console.error('Error fetching blog:', error);
@@ -52,11 +54,11 @@ const singlePropLoader = async ({ params }) => {
     const response = await axios.get(`http://localhost:5000/buy`);
     const allProperties = response.data;
     const property = allProperties.find(prop => prop.prop_id === parseInt(id));
-   
+
     if (!property) {
       throw new Error('Property not found');
     }
-   
+
     return property;
   } catch (error) {
     console.error('Error fetching property:', error);
@@ -79,11 +81,6 @@ const router = createBrowserRouter([
   { path: '/buy', element: <BuyPage /> },
   { path: '/sellerprofile', element: <SellerEditProfile /> },
   { path: '/sellerpassword', element: <SellerPass /> },
-  { path: '/terms', element: <Terms /> },
-  { path: '/privacy', element: <PrivacyPage /> },
-  { path: '/cookie', element: <Cookies/> },
-
-  { path: '/response', element: <Response /> },
   {
     path: '/blogs/:id',
     element: <SingleBlog />,
@@ -108,4 +105,5 @@ function App() {
     </UserProvider>
   );
 }
+
 export default App;

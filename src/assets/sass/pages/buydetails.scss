@@ -1,0 +1,78 @@
+.buy_fill {
+  margin-bottom: 70px;
+  &.buy_sucess {
+    .buy_sucess_submit {
+      border: 1px solid black;
+      background: #f3f3f3;
+      border-radius: 16px;
+      text-align: center;
+      padding: 190px 240px; 
+
+      h1 {
+        font-family: Rozha One;
+        font-size: 40px;
+        font-weight: 400;
+        padding-bottom: 8px;
+      }
+      .buy_sucess_p {
+        width: 475px;
+
+        margin-left: 100px;
+        p {
+          font-family: DM Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 32px;
+        }
+      }
+    }
+  }
+  .buy_details {
+    background: #f3f3f3;
+    border-radius: 16px;
+
+    .buy_fill_form {
+      .buy_form {
+        margin-bottom: 30px;
+        h3 {
+          font-family: DM Sans;
+          font-size: 16px;
+          font-weight: 800;
+          padding-bottom: 8px;
+        }
+
+        .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+          height: 40px;
+          background-color: white;
+        }
+      }
+    }
+    .buy_fill_form_lst {
+      margin-bottom: 50px;
+      .buy_form {
+        margin-bottom: 30px;
+        h3 {
+          font-family: DM Sans;
+          font-size: 16px;
+          font-weight: 800;
+          padding-bottom: 8px;
+        }
+      }
+      .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+        height: 40px;
+        background-color: white;
+      }
+    }
+    padding: 32px;
+    .buy_detail_h1 {
+      margin-bottom: 50px;
+      h1 {
+        font-family: Rozha One;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}
