@@ -9,6 +9,7 @@ import {
   Select,
   MenuItem,
   FormControl,
+  FormHelperText,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -18,6 +19,7 @@ const BuyerDetails = () => {
   const [selectedCity, setSelectedCity] = useState(userData.city);
   const [tempUserData, setTempUserData] = useState({ ...userData });
   const [email, setEmail] = useState("");
+  const [errors, setErrors] = useState({});
 
   const navigate = useNavigate();
 
@@ -48,15 +50,42 @@ const BuyerDetails = () => {
   };
 
   const handleSubmit = () => {
-    setUserData(tempUserData);
-    alert("Profile information saved!");
-    navigate("/buyersubmit", { state: { email } });
+    const newErrors = {};
+    if (!tempUserData.firstName) {
+      newErrors.firstName = "First name is required";
+    }
+    if (!tempUserData.lastName) {
+      newErrors.lastName = "Last name is required";
+    }
+    if (!email) {
+      newErrors.email = "Email is required";
+    }
+    if (!tempUserData.contactNumber) {
+      newErrors.contactNumber = "Contact number is required";
+    } else if (!/^\d+$/.test(tempUserData.contactNumber)) {
+      newErrors.contactNumber = "Contact number must be numeric";
+    }
+    if (!selectedState) {
+      newErrors.state = "State is required";
+    }
+    if (!selectedCity) {
+      newErrors.city = "City is required";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      setUserData(tempUserData);
+      alert("Profile information saved!");
+      navigate("/buyersubmit", { state: { email } });
+    }
   };
 
   const handleCancel = () => {
     setTempUserData({ ...userData });
     setSelectedState(userData.state);
     setSelectedCity(userData.city);
+    setErrors({});
   };
 
   return (
@@ -79,6 +108,8 @@ const BuyerDetails = () => {
                         variant="outlined"
                         fullWidth
                         onChange={handleInputChange}
+                        error={!!errors.firstName}
+                        helperText={errors.firstName}
                       />
                     </div>
                   </Grid>
@@ -91,6 +122,8 @@ const BuyerDetails = () => {
                         variant="outlined"
                         fullWidth
                         onChange={handleInputChange}
+                        error={!!errors.lastName}
+                        helperText={errors.lastName}
                       />
                     </div>
                   </Grid>
@@ -107,6 +140,8 @@ const BuyerDetails = () => {
                         variant="outlined"
                         fullWidth
                         onChange={handleInputChange}
+                        error={!!errors.email}
+                        helperText={errors.email}
                       />
                     </div>
                   </Grid>
@@ -119,6 +154,8 @@ const BuyerDetails = () => {
                         variant="outlined"
                         fullWidth
                         onChange={handleInputChange}
+                        error={!!errors.contactNumber}
+                        helperText={errors.contactNumber}
                       />
                     </div>
                   </Grid>
@@ -129,7 +166,7 @@ const BuyerDetails = () => {
                   <Grid item lg={6}>
                     <div className="buy_form">
                       <h3>City</h3>
-                      <FormControl fullWidth>
+                      <FormControl fullWidth error={!!errors.city}>
                         <Select
                           value={selectedCity}
                           onChange={handleCityChange}
@@ -142,13 +179,16 @@ const BuyerDetails = () => {
                               </MenuItem>
                             ))}
                         </Select>
+                        {errors.city && (
+                          <FormHelperText>{errors.city}</FormHelperText>
+                        )}
                       </FormControl>
                     </div>
                   </Grid>
                   <Grid item lg={6}>
                     <div className="buy_form">
                       <h3>State</h3>
-                      <FormControl fullWidth>
+                      <FormControl fullWidth error={!!errors.state}>
                         <Select
                           value={selectedState}
                           onChange={handleStateChange}
@@ -159,6 +199,9 @@ const BuyerDetails = () => {
                             </MenuItem>
                           ))}
                         </Select>
+                        {errors.state && (
+                          <FormHelperText>{errors.state}</FormHelperText>
+                        )}
                       </FormControl>
                     </div>
                   </Grid>
