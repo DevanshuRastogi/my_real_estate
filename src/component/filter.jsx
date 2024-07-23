@@ -1,3 +1,5 @@
+// Filter.jsx
+
 import React, { useState } from "react";
 import {
   Box,
@@ -10,14 +12,14 @@ import {
   TextField,
   Paper,
 } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Filter = () => {
-  const [location, setLocation] = useState(1);
+  const [location, setLocation] = useState("Scotland");
   const [placeTypes, setPlaceTypes] = useState(["All"]);
   const [priceRange, setPriceRange] = useState([100, 10000]);
   const [size, setSize] = useState({ min: "", max: "" });
   const [features, setFeatures] = useState(["Ac & Heating"]);
+
   const [styles, setStyles] = useState(["A-Frame"]);
 
   const handlePlaceTypeChange = (type) => {
@@ -50,91 +52,89 @@ const Filter = () => {
   };
 
   return (
-    <>
-      <div className="filter_section">
+    <div className="filter_section">
+      <h3>Filter</h3>
 
-        <h3>Filter</h3>
-
-        <div className="country_selector">
-          <h5>Location</h5>
-          <Select
-          className="cs_select"
-            fullWidth
+      <div className="country_selector">
+        <h5>Location</h5>
+        <div className="cs_select">
+          <select
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            startAdornment={<LocationOnIcon />}
           >
-            <MenuItem value="id1">Mumbai</MenuItem>
-            <MenuItem value="id2">Delhi</MenuItem>
-            <MenuItem value="id3">Hyderabad</MenuItem>
-            <MenuItem value="id4">Lucknow</MenuItem>
-            <MenuItem value="id5">Amritsar</MenuItem>
-            <MenuItem value="id6">Raipur</MenuItem>
-          </Select>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Raipur">Raipur</option>
+          </select>
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
         </div>
-        <div className="place_picker">
-          <h5>Types of Places</h5>
-          <div className="check_1">
-            {["All", "Office", "Building", "Shop", "Apartment", "House"].map(
-              (type) => (
-                <FormControlLabel
-                  key={type}
-                  control={
-                    <Checkbox
-                      checked={placeTypes.includes(type)}
-                      onChange={() => handlePlaceTypeChange(type)}
-                      color="primary"
-                    />
-                  }
-                  label={type}
+      </div>
+
+      <div className="place_picker">
+        <h5>Type of Place</h5>
+        <div className="check_grid">
+          {["All", "Office", "Building", "Shop", "Apartment", "House"].map(
+            (type) => (
+              <label key={type} className="checkbox-label">
+                <input
+                  type="checkbox"
+                  checked={placeTypes.includes(type)}
+                  onChange={() => handlePlaceTypeChange(type)}
                 />
-              )
-            )}
-          </div>
+                <span className="checkbox-custom"></span>
+                {type}
+              </label>
+            )
+          )}
         </div>
+      </div>
 
-        <div className="price_range">
-          <h5> Price Range</h5>
+      <div className="price_range">
+        <h5> Price Range</h5>
 
-          <Slider
-            value={priceRange}
-            className="pr_slide"
-            onChange={(_, newValue) => setPriceRange(newValue)}
-            valueLabelDisplay="auto"
-            min={100}
-            max={10000}
+        <Slider
+          value={priceRange}
+          className="pr_slide"
+          onChange={(_, newValue) => setPriceRange(newValue)}
+          valueLabelDisplay="auto"
+          min={100}
+          max={10000}
+        />
+        <div className="price_show">
+          <Typography>${priceRange[0]}</Typography>
+          
+          <Typography>${priceRange[1]}</Typography>
+        </div>
+      </div>
+
+      <div className="size_scale">
+        <h5>Size</h5>
+        <div className="size_inputs">
+          <input
+            type="text"
+            placeholder="Min"
+            value={size.min}
+            onChange={(e) => setSize({ ...size, min: e.target.value })}
           />
-          <Box display="flex" justifyContent="space-between">
-            <Typography>${priceRange[0]}</Typography>
-            <Typography>${priceRange[1]}</Typography>
-          </Box>
-        </div>
-
-        <div className="size_scale">
-          <h5>Size</h5>
-          <div className="size_txt">
-            <TextField
-            
-              placeholder="Min"
-              value={size.min}
-              onChange={(e) => setSize({ ...size, min: e.target.value })}
-              variant="outlined"
-              size="small"
-              sx={{ width: "45%" }}
-            />
-            <TextField
-              placeholder="Max"
-              value={size.max}
-              onChange={(e) => setSize({ ...size, max: e.target.value })}
-              variant="outlined"
-              size="small"
-              sx={{ width: "45%" }}
-            />
+          <div className="sq_ft1">
+          sq ft
           </div>
+          
+          <input
+            type="text"
+            placeholder="Max"
+            value={size.max}
+            onChange={(e) => setSize({ ...size, max: e.target.value })}
+          />
         </div>
+      </div>
 
-        <div className="feature_selector ">
-          <h5>Feature</h5>
+      <div className="feature_selector">
+        <h5>Features</h5>
+        <div className="check_grid">
           {[
             "Ac & Heating",
             "Dishwasher",
@@ -145,40 +145,56 @@ const Filter = () => {
             "Pool",
             "Valet Parking",
           ].map((feature) => (
-            <FormControlLabel
-              key={feature}
-              control={
-                <Checkbox
-                  checked={features.includes(feature)}
-                  onChange={() => handleFeatureChange(feature)}
-                  color="primary"
-                />
-              }
-              label={feature}
-            />
-          ))}
-        </div>
-
-        <div className="style_selector">
-          <h5>Style</h5>
-
-          {["A-Frame", "Cottage", "Dome", "Spanish"].map((style) => (
-            <FormControlLabel
-              key={style}
-              control={
-                <Checkbox
-                  checked={styles.includes(style)}
-                  onChange={() => handleStyleChange(style)}
-                  color="primary"
-                />
-              }
-              label={style}
-            />
+            <label key={feature} className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={features.includes(feature)}
+                onChange={() => handleFeatureChange(feature)}
+              />
+              <span className="checkbox-custom"></span>
+              {feature}
+            </label>
           ))}
         </div>
       </div>
-    </>
+
+      <div className="style_selector">
+        <h5>Style</h5>
+        <div className="check_grid">
+          {["A-Frame", "Cottage", "Dome", "Spanish"].map((style) => (
+            <label key={style} className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={styles.includes(style)}
+                onChange={() => handleStyleChange(style)}
+              />
+              <span className="checkbox-custom"></span>
+              {style}
+            </label>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default Filter;
+
+{
+  /* <div className="price_range">
+<h5> Price Range</h5>
+
+<Slider
+  value={priceRange}
+  className="pr_slide"
+  onChange={(_, newValue) => setPriceRange(newValue)}
+  valueLabelDisplay="auto"
+  min={100}
+  max={10000}
+/>
+<Box display="flex" justifyContent="space-between">
+  <Typography>${priceRange[0]}</Typography>
+  <Typography>${priceRange[1]}</Typography>
+</Box>
+</div> */
+}

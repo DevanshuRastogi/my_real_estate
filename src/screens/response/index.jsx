@@ -2,13 +2,14 @@
 import React, {useEffect, useState } from "react";
 import { Container, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import PropCard from "../../component/propcard";
+import RespoCard from "../../component/respo";
+
 import Dashboard from "../../component/seller_dashboard";
 import Header from "../../component/header";
 import Footer from "../../component/footer";
 
 
-const MyProperty = () => {
+const Response = () => {
   const navigate = useNavigate();
   const handleNavigation = (path) => {
     navigate(path);
@@ -29,7 +30,7 @@ const MyProperty = () => {
   return (
     <>
     <Header />
-    <section className="dashboard_section liked_prop">
+    <section className="dashboard_section respo_prop">
       
       <Container>
         <Grid container>
@@ -40,11 +41,11 @@ const MyProperty = () => {
                   <Dashboard />
                 </Grid>
                 <Grid item lg={9} md={9} sm={9} xs={9}>
-                  <div className="prop_sec">
-                
-                    <div className="propCards">
+                  <div className="respo_sec">
+              
+                    <div className="resonse_cards">
                       {" "}
-                      <PropCard properties={properties} />
+                      <RespoCard properties={properties} />
                     </div>
                     </div>
                 </Grid>
@@ -59,4 +60,4 @@ const MyProperty = () => {
   );
 };
 
-export default MyProperty;
+export default Response;

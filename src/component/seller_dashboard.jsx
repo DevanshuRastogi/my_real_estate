@@ -48,7 +48,7 @@ const Dashboard = () => {
                 <p>My Properties</p>
               </div>
             </li>
-            <li onClick={() => handleNavigation("/")}>
+            <li onClick={() => handleNavigation("/response")}>
               <div className="phase">
                 <div className="icon">
                   <MapsUgcRoundedIcon />
@@ -56,7 +56,7 @@ const Dashboard = () => {
                 <p>Responses</p>
               </div>
             </li>
-            <li onClick={() => handleNavigation("/")}>
+            <li onClick={() => handleNavigation("/login")}>
               <div className="phase_l">
                 <div className="icon">
                   <LogoutRoundedIcon />

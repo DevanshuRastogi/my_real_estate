@@ -15,10 +15,17 @@ import Contact from './screens/contact';
 import AboutUs from './screens/about';
 import Seller from './screens/seller/sellproperty';
 import axios from 'axios';
+import MyProperty from './screens/myproperty';
 import SellerAccount from './screens/seller/selleraccount';
 import SellerEditProfile from './screens/seller/sellereditprofile';
 import SellerPass from './screens/seller/sellerpassword';
 import { UserProvider } from './component/userdata';
+import Response from './screens/response';
+import Terms from './screens/terms';
+import PrivacyPage from './screens/privacypolicy';
+import Cookies from './screens/cookiepage';
+
+
 
 const singleBlogLoader = async ({ params }) => {
   const { id } = params;
@@ -59,6 +66,7 @@ const singlePropLoader = async ({ params }) => {
 
 const router = createBrowserRouter([
   { path: '/homepage', element: <HomePage /> },
+  { path: '/liked', element: <MyProperty /> },
   { path: '/login', element: <Login /> },
   { path: '/signup', element: <SignUp /> },
   { path: '/changepass', element: <ChangePass /> },
@@ -71,6 +79,11 @@ const router = createBrowserRouter([
   { path: '/buy', element: <BuyPage /> },
   { path: '/sellerprofile', element: <SellerEditProfile /> },
   { path: '/sellerpassword', element: <SellerPass /> },
+  { path: '/terms', element: <Terms /> },
+  { path: '/privacy', element: <PrivacyPage /> },
+  { path: '/cookie', element: <Cookies/> },
+
+  { path: '/response', element: <Response /> },
   {
     path: '/blogs/:id',
     element: <SingleBlog />,

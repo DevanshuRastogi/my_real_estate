@@ -25,7 +25,7 @@ const Header = () => {
                   <li><NavLink to="/blogpage">Blogs</NavLink></li>
                   
                   <li><NavLink to="/contact">Contact Us</NavLink></li>
-                  <li><a href="javascript:;">Liked Properties</a></li> {/* Not linked */}
+                  <li><NavLink to="/liked">Liked Properties</NavLink></li> {/* Not linked */}
                 </ul>
               </div>
               <div className="header_part_3">

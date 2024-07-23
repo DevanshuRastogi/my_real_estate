@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import { Button, Container, TextField, InputAdornment } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import logo2 from "../../src/assets/images/Group 47603@2x.png";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -146,7 +147,8 @@ const Footer = () => {
                   {/* <Grid item lg={5}> */}
                   <div className="lower_3">
                     <ul>
-                      <li>Terms of Use</li>
+                      
+                      <li><NavLink to="/terms">Terms of Use</NavLink></li>
                       <li>Privacy Policy</li>
                       <li>Cookie Policy</li>
                     </ul>
