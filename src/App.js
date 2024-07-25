@@ -80,7 +80,13 @@ const router = createBrowserRouter([
   { path: '/selleraccount', element: <SellerAccount /> },
   { path: '/buy', element: <BuyPage /> },
   { path: '/sellerprofile', element: <SellerEditProfile /> },
-  { path: '/sellerpassword', element: <SellerPass /> },
+  { path: '/response', element: <Response /> },
+  { path: '/buyD', element: < BuyerDetails /> },
+  { path: '/buyS', element: < BuyerS /> },
+  { path: '/terms', element: <Terms /> },
+  { path: '/privacy', element: <PrivacyPage /> },
+  { path: '/cookie', element: <Cookies /> },
+
   {
     path: '/blogs/:id',
     element: <SingleBlog />,

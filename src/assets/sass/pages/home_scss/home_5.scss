@@ -4,21 +4,15 @@
     margin-bottom: 60px;
     .prop_upper {
       h2 {
-        //font-family: "Inter", sans-serif;
         font-size: 32px;
         font-weight: 700;
-  
-       
         padding-bottom: 16px;
         text-align: center;
       }
 
       p {
-        //font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 400;
-    
-       
         padding-bottom: 60px;
         text-align: center;
         color: #4d5461;
@@ -27,6 +21,13 @@
 
     .prop_details {
       position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+
       .prop_img_big {
         height: 295px;
         width: 567px;
@@ -52,29 +53,26 @@
           left: 0;
           bottom: 0;
           border-radius: 10px;
-      }
+        }
       }
       .details_head {
         position: absolute;
         top: 30px;
         left: 30px;
         p {
-          font-family: Roboto;
+          font-family: Roboto, sans-serif;
           font-size: 13px;
           font-weight: 400;
           line-height: 28.5px;
-          
-          font-family: "Roboto", sans-serif;
           color: #ffffff;
         }
 
         h4 {
-          font-family: "Roboto", sans-serif;
+          font-family: Roboto, sans-serif;
           color: #ffffff;
           font-size: 18px;
           font-weight: 500;
           line-height: 25.2px;
-          
         }
       }
     }
@@ -88,29 +86,23 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        
-        }
-        &::before {
-          content: "";
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.767),
-            rgba(255, 255, 0, 0.126)
-          );
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          border-radius: 10px;
+      }
+      &::before {
+        content: "";
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.767),
+          rgba(255, 255, 0, 0.126)
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
       }
     }
-
-      
-
-    
-    
   }
 }

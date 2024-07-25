@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Grid, Container, Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AddLocationAltOutlinedIcon from "@mui/icons-material/AddLocationAltOutlined";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import HotelOutlinedIcon from "@mui/icons-material/HotelOutlined";
 import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Home_3 = ({ displayCount = 6, feature }) => {
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    const gridItems = gridRef.current.children;
+    
+    gsap.set(gridItems, { autoAlpha: 0, y: 50 });
+    
+    ScrollTrigger.batch(gridItems, {
+      onEnter: (elements) => {
+        gsap.to(elements, {
+          duration: 0.8,
+          autoAlpha: 1,
+          y: 0,
+          stagger: {
+            amount: 1,
+            from: "random"
+          },
+          ease: "power3.out"
+        });
+      },
+      start: "top 80%"
+    });
+
+  }, [])
+
   const propertyData = [
     {
-      image:
-        "http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg",
+      image: "http://www.gbdarchitects.com/wp-content/uploads/2013/09/Kiln-Apartments-1.jpg",
       title: "Skyper Pool Apartment",
       address: "1020 Bloomingdale Ave",
       bedrooms: 4,
@@ -19,8 +47,7 @@ const Home_3 = ({ displayCount = 6, feature }) => {
       price: "280,000",
     },
     {
-      image:
-        "https://myersjackson.com/wp-content/uploads/2020/06/minimal-hero-01.jpg",
+      image: "https://myersjackson.com/wp-content/uploads/2020/06/minimal-hero-01.jpg",
       title: "Luxury Villa",
       address: "2040 Rosewood Lane",
       bedrooms: 5,
@@ -29,8 +56,7 @@ const Home_3 = ({ displayCount = 6, feature }) => {
       price: "450,000",
     },
     {
-      image:
-        "https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202304/villa-design-ideas-that-fuse-beauty-and-functionality/luxury-classic-villa-exterior-design.jpg",
+      image: "https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202304/villa-design-ideas-that-fuse-beauty-and-functionality/luxury-classic-villa-exterior-design.jpg",
       title: "Modern Apartment",
       address: "3060 Pine Street",
       bedrooms: 3,
@@ -39,8 +65,7 @@ const Home_3 = ({ displayCount = 6, feature }) => {
       price: "200,000",
     },
     {
-      image:
-        "https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000",
+      image: "https://robbreport.com/wp-content/uploads/2017/11/manzu-exterior-deck-5.jpg?w=1000",
       title: "Cozy Cottage",
       address: "4080 Maple Avenue",
       bedrooms: 2,
@@ -115,7 +140,7 @@ const Home_3 = ({ displayCount = 6, feature }) => {
               )}
 
               <div className="f_grid">
-                <Grid container spacing={2}>
+                <Grid container spacing={2} ref={gridRef}>
                   {propertyData
                     .slice(0, displayCount)
                     .map((property, index) => (

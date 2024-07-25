@@ -3,19 +3,31 @@ import * as React from 'react';
 import Container from "@mui/material/Container";
 import HomeIcon from "@mui/icons-material/Home";
 import logo from "../../assets/images/top_home.png";
+import VanillaTilt from "vanilla-tilt";
+import SearchBar from "../searchbar";
 
-
-import SearchBar from "../searchbar"
 const Home_1 = () => {
-  // const [property, setAge] = React.useState('');
+  React.useEffect(() => {
+    const imageElement = document.querySelector(".home_image img");
+    VanillaTilt.init(imageElement, {
+      max: 10,
+      speed: 1000,
+      glare: true,
+      "max-glare": 0.5,
+      transition: true,
+      easing: "cubic-bezier(.03,.98,.52,.99)"
+    });
+    return () => {
+      if (imageElement.vanillaTilt) {
+        imageElement.vanillaTilt.destroy();
+      }
+    };
+  }, []);
 
-  // const handleChange = (event) => {
-  //   setAge(event.target.value);
-  // };
   return (
     <section className="home_1">
       <Container>
-        <Grid conatiner>
+        <Grid container>
           <Grid item lg={12} md={12} sm={12} xs={12}>
             <div className="home_1_info">
               <div className="home_1_icon">
@@ -24,7 +36,7 @@ const Home_1 = () => {
               </div>
               <div className="home_1_heading">
                 <h1>
-                Make Yourself At Home
+                  Make Yourself At Home
                 </h1>
               </div>
               <div className="home_1_para">
@@ -32,32 +44,16 @@ const Home_1 = () => {
                   Luxury Homes from Lusaka to Livingstone. Experience Zambia's
                   Most Desired Real Estate.
                 </p>
-           
               </div>
               <SearchBar />
               <div className="home_image">
-                <img src={logo} alt="..." />
+                <img src={logo} alt="Real Estate Logo" />
               </div>
-              <div className="eclipse">
-                
-              </div>
-              {/* <div className="sell_buy">
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={property}
-                  label="Property Type"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
-                </Select>
-              </div> */}
             </div>
           </Grid>
         </Grid>
       </Container>
+              <div className="eclipse"></div>
     </section>
   );
 };

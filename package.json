@@ -5,13 +5,15 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.16.0",
+    "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "express": "^4.19.2",
+    "framer-motion": "^11.3.9",
+    "gsap": "^3.12.5",
     "ionicons": "^7.4.0",
     "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
@@ -22,7 +24,8 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
     "sass": "^1.77.6",
-    "swiper": "^11.1.4",
+    "swiper": "^11.1.5",
+    "vanilla-tilt": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import { Container, Grid, TextField, Select, MenuItem, Typography, Box } from "@mui/material";
 import property1 from "../assets/images/select1.png";
 import property2 from "../assets/images/select2.png";
+import property3 from "../assets/images/select2.png";
 import property4 from "../assets/images/select4.png";
 import property5 from "../assets/images/select5.png";
+import propertyblue1 from "../assets/images/selectblue1.png";
+import propertyblue2 from "../assets/images/selectblue2.png";
+import propertyblue3 from "../assets/images/selectblue2.png";
+import propertyblue4 from "../assets/images/selectblue4.png";
+import propertyblue5 from "../assets/images/selectblue5.png";
+
 import Dashboard from "./seller_dashboard";
 
 const propertyTypes = [
-  { id: 1, name: "Modern Villa", img: property1 },
+  { id: 1, name: "Modern Villa", img: property1 ,img2:propertyblue1 },
   { id: 2, name: "Town House", img: property2 },
-  { id: 3, name: "Apartment", img: property2 },
+  { id: 3, name: "Apartment", img: property3 },
   { id: 4, name: "Family House", img: property4 },
   { id: 5, name: "Other", img: property5 },
 ];
@@ -90,7 +97,8 @@ const SellProperty = () => {
                                     onClick={() => handlePropertySelect(property.id)}
                                   >
                                     <div className="prop_image">
-                                      <img src={property.img} alt={property.name} />
+                                      <img className="img_gray" src={property.img} alt={property.name} />
+                                      <img className="img_blue" src={property.img2} alt={property.name} />
                                     </div>
                                     <p>{property.name}</p>
                                   </div>

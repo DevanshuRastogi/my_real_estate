@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Container } from "@mui/material/";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
@@ -6,8 +7,26 @@ import icon1 from "../../assets/images/Icon.png";
 import icon2 from "../../assets/images/Icon 2.png";
 import icon3 from "../../assets/images/Icon 3.png";
 import icon4 from "../../assets/images/Icon 4.png";
+import VanillaTilt from "vanilla-tilt";
 
 const Home_2 = () => {
+  useEffect(() => {
+    const imageElement = document.querySelector(".properties_home img");
+    VanillaTilt.init(imageElement, {
+      max: 10,
+      speed: 1000,
+      glare: true,
+      "max-glare": 0.5,
+      transition: true,
+      easing: "cubic-bezier(.03,.98,.52,.99)"
+    });
+    return () => {
+      if (imageElement.vanillaTilt) {
+        imageElement.vanillaTilt.destroy();
+      }
+    };
+  }, []);
+
   return (
     <section className="home_2">
       <Container>
@@ -28,7 +47,7 @@ const Home_2 = () => {
                       </p>
                       <Button variant="contained">Browse Properties</Button>
                       <div className="properties_home">
-                        <img src={sechome} alt="..." />
+                        <img src={sechome} alt="3D Rendering of Home" />
                       </div>
                     </div>
                   </div>
@@ -40,7 +59,7 @@ const Home_2 = () => {
                       <Grid item lg={6} md={6} sm={6} xs={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
-                            <img src={icon1} alt="..." />
+                            <img src={icon1} alt="Property Insurance Icon" />
                           </div>
                           <h4>Property Insurance</h4>
                           <p>
@@ -53,7 +72,7 @@ const Home_2 = () => {
                       <Grid item lg={6}  md={6} sm={6} xs={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
-                            <img src={icon2} alt="..." />
+                            <img src={icon2} alt="Best Price Icon" />
                           </div>
                           <h4>Best Price</h4>
                           <p>
@@ -66,13 +85,11 @@ const Home_2 = () => {
                     </Grid>
                     </div>
                     <div className="properties_lower">
-
-                   
                     <Grid container spacing={2}>
                       <Grid item lg={6} md={6} sm={6} xs={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
-                            <img src={icon3} alt="..." />
+                            <img src={icon3} alt="Lowest Commission Icon" />
                           </div>
                           <h4>Lowest Commission</h4>
                           <p>
@@ -84,7 +101,7 @@ const Home_2 = () => {
                       <Grid item lg={6}  md={6} sm={6} xs={6}>
                         <div className="properties_p1">
                           <div className="p1_image">
-                            <img src={icon4} alt="..." />
+                            <img src={icon4} alt="Overall Control Icon" />
                           </div>
                           <h4>Overall Control</h4>
                           <p>

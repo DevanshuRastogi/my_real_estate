@@ -26,9 +26,11 @@
     opacity: 70%;
     width: 127px;
     height: 127px;
-    top: 263px;
-    right: 441px;
+    top: 50%;
+    right: 30%;
     bottom: 0;
+    mix-blend-mode: color-burn;
+    animation: movement1 15s linear infinite alternate;
   }
   .eclipse {
     border-radius: 50%;
@@ -37,9 +39,13 @@
     opacity: 70%;
     width: 127px;
     height: 127px;
-    top: 108px;
-    right: 168px;
+    top: 20%;
+    right: 25%;
     bottom: 0;
+    mix-blend-mode: color-burn;
+
+    animation: movement1 15s linear infinite alternate-reverse;
+
   }
   .home_1_info {
     border-radius: 0px 5px 5px 0px;
@@ -116,3 +122,33 @@
     
   }
 }
+
+
+@keyframes movement1 {
+  0%{
+    top: 60%;
+    right: 35%;
+    scale:0.8;
+  }
+  25%{
+    top: 30%;
+    right: 50%;
+    scale:0.5;
+  }
+  50%{
+    top: 75%;
+    right: 70%;
+    scale:1;
+  }
+  75%{
+    top: 10%;
+    right: 90%;
+    scale:0.6;
+  }
+  100%{
+    top: 60%;
+    right: 30%;
+    scale:0.8;
+  }
+}
+

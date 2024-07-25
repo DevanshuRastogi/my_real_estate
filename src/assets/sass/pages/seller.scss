@@ -140,10 +140,19 @@
                 cursor: pointer;
                 transition: all 0.3s;
                 height: 150px;
-
-                &.selected {
+                border: 2px solid transparent;
+                &.selected , &:hover{
                   border: 2px solid blue;
-
+                  .prop_image{
+                    img{
+                      &.img_blue{
+                        display: block;
+                      }
+                      &.img_gray{
+                        display: none;
+                      }
+                    }
+                  }
                   p {
                     color: blue;
                   }
@@ -152,19 +161,17 @@
                 .prop_image {
                   height: 89px;
                   width: 89px;
-                  padding-bottom: 12px;
-                  filter: grayscale(1);
-                  &:hover {
-                    filter: grayscale(0);
-                  }
-
+                  margin-bottom: 12px;
+                  overflow: hidden;
                   img {
                     height: 100%;
                     width: 100%;
                     object-fit: contain;
-
-                    &:hover {
-                      filter: hue-rotate(215deg);
+                    &.img_blue{
+                      display: none;
+                    }
+                    &.img_gray{
+                      display: block;
                     }
                   }
                 }

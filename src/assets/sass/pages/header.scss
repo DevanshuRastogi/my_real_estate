@@ -13,7 +13,8 @@
       height: 37px;
       justify-self: start;
       // padding-top: 2px;
-
+      animation: show .5s linear 1 2s forwards;
+      opacity: 0;
       img {
         height: 100%;
         width: 100%;
@@ -56,6 +57,8 @@
       align-self: self-start;
       // padding-top: 4px;
       Button {
+      animation: show .5s linear 1 2s forwards;
+        opacity: 0;
         background: linear-gradient(90deg, #7e81e7 -12.81%, #0f40b2 100%);
         width: 78px;
         height: 31px;
@@ -73,6 +76,15 @@
     .menu {
       display: none;
     }
+  }
+}
+
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
