@@ -71,18 +71,13 @@
               }
 
               &:hover {
-                background: -webkit-linear-gradient(
-                  90deg,
-                  #7e81e7 -12.81%,
-                  #0f40b2 100%
-                );
-
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                svg:hover {
-                  fill: red;
-                }
+                color: blue;
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                // background-clip: text;
+                // svg:hover {
+                //   fill: red;
+                // }
               }
             }
           }
@@ -114,7 +109,6 @@
       .css-wb57ya-MuiFormControl-root-MuiTextField-root {
         background-color: white;
       }
-
       .select_prop {
         font-family: "DM Sans", sans-serif;
         font-size: 20px;
@@ -141,14 +135,15 @@
                 transition: all 0.3s;
                 height: 150px;
                 border: 2px solid transparent;
-                &.selected , &:hover{
+                &.selected,
+                &:hover {
                   border: 2px solid blue;
-                  .prop_image{
-                    img{
-                      &.img_blue{
+                  .prop_image {
+                    img {
+                      &.img_blue {
                         display: block;
                       }
-                      &.img_gray{
+                      &.img_gray {
                         display: none;
                       }
                     }
@@ -167,10 +162,10 @@
                     height: 100%;
                     width: 100%;
                     object-fit: contain;
-                    &.img_blue{
+                    &.img_blue {
                       display: none;
                     }
-                    &.img_gray{
+                    &.img_gray {
                       display: block;
                     }
                   }
@@ -284,90 +279,20 @@
 
       .edit_button {
         margin-bottom: 50px;
-        .MuiButtonBase-root {
-          .btn {
-            // width: 106px;
-            // height: 44px;
-            // font-family: Inter;
-            // font-size: 16px;
-            // font-weight: 700;
-            // text-align: center;
+        .btn {
+          width: 106px;
+          height: 48px;
+          padding: 12px 20px;
+          gap: 12px;
 
-            // position: relative;
-            // padding: 10px;
-            // box-sizing: border-box;
-            // $border: 3px;
-            // color: red;
-            // background: white;
-            // background-clip: padding-box; /* !importanté */
-            // border: solid $border transparent; /* !importanté */
-            // border-radius: 1em;
-
-            position: relative;
-            padding: 10px;
-            box-sizing: border-box;
-
-            $border: 5px;
-            color: red;
-            background: white;
-            background-clip: padding-box; /* !importanté */
-            border: solid $border transparent; /* !importanté */
-            border-radius: 1em;
-
-            &:before {
-              content: "";
-              position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              z-index: -1;
-              margin: -$border; /* !importanté */
-              border-radius: inherit; /* !importanté */
-
-              border: 3px solid;
-
-              background: linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%);
-            }
+          background: linear-gradient(white, white) padding-box,
+            linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%) border-box;
+          opacity: 1;
+          border: 2px solid;
+          &:hover {
+            border: 2px solid !important;
           }
         }
-
-        // .btn {
-        //   &.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-        //     width: 106px;
-        //     height: 44px;
-        //     font-family: Inter;
-        //     font-size: 16px;
-        //     font-weight: 700;
-        //     text-align: center;
-
-        //     position: relative;
-        //     padding: 10px;
-        //     box-sizing: border-box;
-        //     $border: 5px;
-        //     color: red;
-        //     background: white;
-        //     background-clip: padding-box; /* !importanté */
-        //     border: solid $border transparent; /* !importanté */
-        //     border-radius: 1em;
-
-        //     &:before {
-        //       content: "";
-        //       position: absolute;
-        //       top: 0;
-        //       right: 0;
-        //       bottom: 0;
-        //       left: 0;
-        //       z-index: -1;
-        //       margin: -$border; /* !importanté */
-        //       border-radius: inherit; /* !importanté */
-
-        //       // border: 1.5px solid;
-
-        //       background: linear-gradient(90deg, #7e81e7 0%, #0f40b2 100%);
-        //     }
-        //   }
-        // }
       }
 
       .left_detail_img {
@@ -439,10 +364,34 @@
 
   &.seller_edit {
     .edit_all {
-      .css-1ualgfl-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
-        height: 40px;
-        background: white;
+      .edit_profile_button{
+        .button_1{
+          .cancel_btn{
+            width: Fixed (106px) px;
+            height: Hug (48px) px;
+            padding: 12px 20px 12px 20px;
+            gap: 12px;
+            border-radius: 6px 0px 0px 0px;
+            border: 2px;
+            opacity: 1px;
+          }
+        }
+        .save_btn{
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: center;
+          width: Fixed (106px) px;
+          height: Hug (48px) px;
+          padding: 12px 20px 12px 20px;
+          gap: 12px;
+          border-radius: 6px 0px 0px 0px;
+          opacity: 0px;
+        }
       }
+ 
+
       h3 {
         font-family: DM Sans;
         font-size: 16px;
@@ -454,13 +403,6 @@
         background-color: white;
       }
       .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        text-align: center;
-      }
-      .css-sghohy-MuiButtonBase-root-MuiButton-root {
         font-family: Inter;
         font-size: 16px;
         font-weight: 700;
@@ -578,7 +520,7 @@
         overflow: hidden;
         grid-template-columns: repeat(3, 270px);
         justify-content: space-evenly;
-        
+
         // gap: 45px;
         row-gap: 15px;
 
@@ -599,7 +541,6 @@
               object-fit: cover;
               transition: transform 0.5s ease-in-out;
             }
-            
           }
           .card_content {
             padding: 10px 18px;
@@ -644,9 +585,7 @@
             transform: translateY(-2px);
             box-shadow: -1px 5px 8px #1845b6;
             .card_image {
-              
               img {
-                
                 transform: scale(1.05);
               }
             }
@@ -706,12 +645,10 @@
                   font-weight: 400;
                   color: black;
                   opacity: 80%;
-                 
                 }
-                .phn_only{
+                .phn_only {
                   display: flex;
-                  gap:5px
-                  
+                  gap: 5px;
                 }
               }
             }
@@ -739,23 +676,20 @@
                 opacity: 80%;
               }
             }
-          }  transition: transform 0.2s ease-in-out;
+          }
+          transition: transform 0.2s ease-in-out;
 
           &:hover {
             transform: translateY(-2px);
             box-shadow: 5px 5px 20px #1845b6;
             .card_image {
-              
               img {
-                
                 transform: scale(1.05);
               }
             }
           }
-         
         }
       }
-      
     }
   }
 }

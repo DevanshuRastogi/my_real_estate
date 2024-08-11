@@ -18,7 +18,6 @@ import axios from 'axios';
 import MyProperty from './screens/myproperty';
 import SellerAccount from './screens/seller/selleraccount';
 import SellerEditProfile from './screens/seller/sellereditprofile';
-import SellerPass from './screens/seller/sellerpassword';
 import { UserProvider } from './component/userdata';
 import BuyerDetails from './screens/buy/buydetails';
 import BuyerS from './screens/buy/buysubmit';
@@ -26,7 +25,7 @@ import Response from './screens/response';
 import Terms from './screens/terms';
 import PrivacyPage from './screens/privacypolicy';
 import Cookies from './screens/cookiepage';
-
+import SellerPass from "./screens/seller/sellerpassword"
 
 
 const singleBlogLoader = async ({ params }) => {
@@ -86,6 +85,7 @@ const router = createBrowserRouter([
   { path: '/terms', element: <Terms /> },
   { path: '/privacy', element: <PrivacyPage /> },
   { path: '/cookie', element: <Cookies /> },
+  { path: '/sellerpassword', element: <SellerPass/> },
 
   {
     path: '/blogs/:id',

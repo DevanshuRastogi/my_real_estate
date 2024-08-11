@@ -113,7 +113,7 @@ const Home_3 = ({ displayCount = 6, feature }) => {
                       <div className="f_list_1">
                         <ul>
                           <li>
-                            <Button variant="outlined">All Properties</Button>
+                          <a href="javascript:;">All Properties</a>
                           </li>
                           <li>
                             <a href="javascript:;">Villa</a>

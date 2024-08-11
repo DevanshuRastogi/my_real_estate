@@ -19,7 +19,7 @@
         
         text-align: center;
         color: #4d5461;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
     }
 
@@ -33,25 +33,26 @@
         ul {
           li {
             display: inline-block;
-            margin-right: 35px;
-            .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-              color: #1a1a1a;
-              border-radius: 40px;
-              background: #fff8f6;
-
-              //font-family: "Inter", sans-serif;
-              font-size: 15px;
-              font-weight: 500;
-              line-height: 30.4px;
-              
-            }
+            margin-right: 10px;
+            margin-top: 5px;
+ 
             a {
               //font-family: "Inter", sans-serif;
-              font-size: 15px;
+              font-size: 17px;
               font-weight: 500;
               line-height: 30.4px;
-            
+              padding: 8px 16px; 
+              border: 2px solid transparent;
+              border-radius: 0;
+              transition: border 0s ease, border-radius 0s ease;
               color: #1a1a1a;
+              &:hover{
+                border: 1px solid;
+                border-radius: 20px;
+                color: black;
+                background: #FFF8F6;
+
+              }
             }
           }
         }
@@ -66,8 +67,8 @@
           line-height: 54px;
           align-items: end;
           color: #1a1a1a;
-          .ArrowForwardIcon {
-            margin-bottom: -4px;
+          .css-uxuua9-MuiSvgIcon-root {
+            margin-bottom: -7px;
           }
         }
       }
