@@ -211,3 +211,120 @@ const Login = () => {
   );
 };
 export default Login;
+
+/* 
+
+<div className="form_section_all">
+                        <h3>Sign-Up </h3>
+                        <p>If you already have an account register</p>
+                        <p>
+                        You can   <a href="javascript:;">Login here !</a>
+                        </p>
+
+                        <div className="form_fields">
+                          <Grid container>
+                            <Grid item lg={12} md={12} sm={12} xs={12}>
+                              <div className="fname_lname">
+                                <Grid container columnGap={6}>
+                                  <Grid item lg={5} md={6} sm={6} xs={6}>
+                                    <div className="fname">
+                                      <FormControl variant="standard">
+                                        <InputLabel htmlFor="fnameId" shrink>
+                                          <b>First Name</b>
+                                        </InputLabel>
+                                        <Input
+                                          placeholder="Enter your first name"
+                                          id="fnameId"
+                                          startAdornment={
+                                            <InputAdornment position="start">
+                                              <PersonOutlineIcon />
+                                            </InputAdornment>
+                                          }
+                                        />
+                                      </FormControl>
+                                    </div>
+                                  </Grid>
+                                  <Grid item lg={5} md={6} sm={6} xs={6}>
+                                    <div className="lname">
+                                      <FormControl variant="standard">
+                                        <InputLabel htmlFor="lnameId" shrink>
+                                          <b>Last Name</b>
+                                        </InputLabel>
+                                        <Input
+                                          placeholder="Enter your last name"
+                                          id="lnameId"
+                                          startAdornment={
+                                            <InputAdornment position="start">
+                                              <PersonOutlineIcon />
+                                            </InputAdornment>
+                                          }
+                                        />
+                                      </FormControl>
+                                    </div>
+                                  </Grid>
+                                </Grid>
+                              </div>
+                            </Grid>
+                            <Grid item lg={12} md={12} sm={12} xs={12}>
+                              <div autoComplete="off" className="email_field">
+                                <FormControl variant="standard">
+                                  <InputLabel htmlFor="component-helper" shrink>
+                                    <b>Email</b>
+                                  </InputLabel>
+                                  <Input
+                                    placeholder="Enter your email address"
+                                    id="component-helper"
+                                    startAdornment={
+                                      <InputAdornment position="start">
+                                        <MailOutlineIcon />
+                                      </InputAdornment>
+                                    }
+                                  />
+                                </FormControl>
+                              </div>
+                            </Grid>
+
+                            <Grid item lg={12} md={12} sm={12} xs={12}>
+                              <div autoComplete="off" className="pass_field">
+                                <FormControl variant="standard">
+                                  <InputLabel htmlFor="pass-comp" shrink>
+                                    <b>Password</b>
+                                  </InputLabel>
+                                  <Input
+                                    placeholder="Enter your Password"
+                                    id="pass-comp"
+                                    type={showPassword ? "text" : "password"}
+                                    startAdornment={
+                                      <InputAdornment position="start">
+                                        <LockOutlinedIcon />
+                                      </InputAdornment>
+                                    }
+                                    endAdornment={
+                                      <InputAdornment position="end">
+                                        <IconButton
+                                          aria-label="toggle password visibility"
+                                          onClick={handleClickShowPassword}
+                                          onMouseDown={handleMouseDownPassword}
+                                        >
+                                          {showPassword ? (
+                                            <VisibilityOff />
+                                          ) : (
+                                            <Visibility />
+                                          )}
+                                        </IconButton>
+                                      </InputAdornment>
+                                    }
+                                  />
+                                </FormControl>
+                              </div>
+                              
+
+                              <div className="submit_btn">
+                                <Button variant="contained">Register</Button>
+                              </div>
+                            </Grid>
+                          </Grid>
+                        </div>
+                      </div>
+
+*/

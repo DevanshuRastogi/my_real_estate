@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Container } from "@mui/material/";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
@@ -8,14 +8,8 @@ import icon2 from "../../assets/images/Icon 2.png";
 import icon3 from "../../assets/images/Icon 3.png";
 import icon4 from "../../assets/images/Icon 4.png";
 import VanillaTilt from "vanilla-tilt";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Home_2 = () => {
-  const cardsRef = useRef(null);
-
   useEffect(() => {
     const imageElement = document.querySelector(".properties_home img");
     VanillaTilt.init(imageElement, {
@@ -26,30 +20,10 @@ const Home_2 = () => {
       transition: true,
       easing: "cubic-bezier(.03,.98,.52,.99)"
     });
-
-    const cards = cardsRef.current.children;
-    gsap.fromTo(cards, 
-      { x: '100%', opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        stagger: 0.1,
-        duration: 2,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: cardsRef.current,
-          start: "top 80%",
-          end: "top 20%",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
     return () => {
       if (imageElement.vanillaTilt) {
         imageElement.vanillaTilt.destroy();
       }
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
 
@@ -79,7 +53,7 @@ const Home_2 = () => {
                   </div>
                 </Grid>
                 <Grid item lg={7} md={7} sm={7} xs={7}>
-                  <div className="properties_2" ref={cardsRef}>
+                  <div className="properties_2">
                     <div className="properties_upper">
                     <Grid container spacing={2}>
                       <Grid item lg={6} md={6} sm={6} xs={6}>
