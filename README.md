@@ -66,7 +66,7 @@
 
 ## Screenshots
 
-![Homepage](path/to/homepage-image.png)
+![Homepage](https://github.com/DevanshuRastogi/my_real_estate/blob/main/Screenshot%202024-08-30%20105012.png)
 ![Property Listings](path/to/property-listings-image.png)
 ![Property Details](path/to/property-details-image.png)
 ![About Page](path/to/about-page-image.png)
